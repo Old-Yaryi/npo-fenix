@@ -1,0 +1,31 @@
+$primary-color: #2B323C;
+$second-color: #BF9D77;
+$accent_bg: linear-gradient(360deg, rgba(152, 48, 49, 0.9) 29.13%, rgba(152, 48, 49, 0.9) 98.03%);
+$accent-color: #983031;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $primary-color
+}
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color:$primary-color;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+h1 {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 130%;
+  color: $primary-color;
+}
+h2 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 150%;
+  color: $second-color;
+}

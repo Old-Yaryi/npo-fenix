@@ -1,0 +1,31 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #2B323C;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2B323C;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 130%;
+  color: #2B323C;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 150%;
+  color: #BF9D77;
+}
+/*# sourceMappingURL=main.css.map */

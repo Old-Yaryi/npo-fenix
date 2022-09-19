@@ -455,7 +455,28 @@ main {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  border-color: #F9F9F9;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.footer__menu-up {
+  padding: 14px 27px;
+  background-color: #BF9D77;
+  margin-right: -2px;
+}
+
+.footer__menu-p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.footer__menu-txt {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
 }
 
 .footer__logo {

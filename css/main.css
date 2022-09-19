@@ -33,6 +33,10 @@ header {
   background-color: #2B323C;
 }
 
+main {
+  height: 100vh;
+}
+
 .container__full {
   width: 100%;
   background-color: #fff;
@@ -406,5 +410,72 @@ header {
   line-height: 130%;
   text-transform: uppercase;
   color: #2B323C;
+}
+
+.footer {
+  position: relative;
+  background-color: #2B323C;
+  margin-bottom: 200px;
+}
+
+.footer__inner {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.footer__menu {
+  position: absolute;
+  background-color: #fff;
+  top: 0%;
+  max-width: 1170px;
+  width: 100%;
+  z-index: 2;
+}
+
+.footer__menu::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 250px;
+  left: -250px;
+  top: 0;
+  background-color: #fff;
+}
+
+.footer__menu-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  border-color: #F9F9F9;
+}
+
+.footer__logo {
+  background-color: #F9F9F9;
+  padding: 100px 50px 95px 1px;
+  position: relative;
+  width: 370px;
+}
+
+.footer__logo::after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  background-color: #F9F9F9;
+  top: 0;
+  left: -421px;
+}
+
+.footer__info {
+  background-color: #2B323C;
 }
 /*# sourceMappingURL=main.css.map */

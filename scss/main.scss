@@ -2,6 +2,7 @@ $primary-color: #2B323C;
 $second-color: #BF9D77;
 $accent_bg: linear-gradient(360deg, rgba(152, 48, 49, 0.9) 29.13%, rgba(152, 48, 49, 0.9) 98.03%);
 $accent-color: #983031;
+$bg_accent: #F9F9F9;
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -31,6 +32,9 @@ h2 {
 }
 header {
   background-color: $primary-color;
+}
+main {
+  height: 100vh;
 }
 .container__full {
   width: 100%;
@@ -295,6 +299,66 @@ header {
     }
   }
 
+}
+
+.footer {
+  position: relative;
+  background-color: $primary-color;
+  margin-bottom: 200px;
+  &__inner {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__menu {
+    position: absolute;
+    background-color: #fff;
+    top: 0%;
+    max-width: 1170px;
+    width: 100%;
+    z-index: 2;
+    &::after {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 250px;
+      left: -250px;
+      top: 0;
+      background-color: #fff; 
+   }    
+    &-wrapper {
+      display: flex;     
+      margin: 0 auto;
+      border-color: $bg_accent;      
+    }
+  }
+  
+  &__logo {
+    background-color: $bg_accent;
+    padding: 100px 50px 95px 1px;
+    position: relative;
+    width: 370px;
+    &::after {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 100%;
+      background-color: $bg_accent;
+      top: 0;
+      left: -421px;
+    &-box {
+      
+
+      }
+    }
+    
+  }
+  &__info {
+    background-color: $primary-color;
+  }
 }
 
 

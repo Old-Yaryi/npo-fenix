@@ -33,9 +33,99 @@ header {
   background-color: #2B323C;
 }
 
+.container__full {
+  width: 100%;
+  background-color: #fff;
+  padding: 24px 0;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1170px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo__img {
+  margin-right: 20px;
+}
+
+.logo__title {
+  color: #983031;
+  font-weight: 900;
+  font-size: 29px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 18px 0;
+}
+
+.menu__link {
+  color: #fff;
+  position: relative;
+  text-align: center;
+}
+
+.menu__link::before {
+  position: absolute;
+  content: "";
+  height: 4px;
+  background-color: #BF9D77;
+  left: 50%;
+  width: 0%;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  bottom: -10px;
+}
+
+.menu__link:hover::before {
+  width: 100%;
+  left: 0%;
+}
+
+.menu__p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  -webkit-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+}
+
+.menu__p:hover {
+  color: #BF9D77;
+}
+
+.menu__txt {
+  color: #fff;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+  opacity: 0.5;
+  -webkit-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+}
+
+.menu__txt:hover {
+  color: #BF9D77;
 }
 
 .header {
@@ -88,6 +178,19 @@ header {
 
 .header__menu-descrition {
   background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__menu-nav {
+  height: 68px;
 }
 
 .header__desc {
@@ -210,9 +313,98 @@ header {
   position: absolute;
   top: 24px;
   right: 0px;
+  display: none;
 }
 
-.header__link-language li:hover .header__link-language_var {
+.header__link-language_var.active {
   display: block;
+}
+
+.header__contact {
+  padding: 16px 32px;
+  background-color: #FBF7F1;
+}
+
+.header__contact a, .header__contact p {
+  font-size: 12px;
+  line-height: 150%;
+  color: #2B323C;
+  position: relative;
+}
+
+.header__contact a::after {
+  position: absolute;
+  content: url(../img/mail.svg);
+  left: -17px;
+  bottom: -4px;
+}
+
+.header__contact p::after {
+  position: absolute;
+  content: url(../img/time.svg);
+  left: -17px;
+  bottom: -2px;
+}
+
+.header__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  row-gap: 13px;
+}
+
+.header__about-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__about-link {
+  color: #983031;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  position: relative;
+  -webkit-transition: color 0.2s ease 0s;
+  transition: color 0.2s ease 0s;
+}
+
+.header__about-link::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: #BF9D77;
+  left: 50%;
+  width: 0%;
+  bottom: 0;
+  -webkit-transition: width 0.4s ease 0s, left 0.4s ease 0s;
+  transition: width 0.4s ease 0s, left 0.4s ease 0s;
+}
+
+.header__about-link:hover {
+  color: #BF9D77;
+}
+
+.header__about-link:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.header__about-phone {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #2B323C;
 }
 /*# sourceMappingURL=main.css.map */

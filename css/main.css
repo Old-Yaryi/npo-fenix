@@ -594,8 +594,8 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-column-gap: 11vw;
-          column-gap: 11vw;
+  -webkit-column-gap: 9vw;
+          column-gap: 9vw;
 }
 
 .footer__info-item {

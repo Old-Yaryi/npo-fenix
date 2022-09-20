@@ -494,6 +494,10 @@ main {
   margin-right: -2px;
 }
 
+.footer__menu-up:hover {
+  background-color: #983031;
+}
+
 .footer__menu-link {
   position: relative;
 }
@@ -627,6 +631,10 @@ main {
   line-height: 130%;
 }
 
+.footer__info-tel:hover {
+  color: #983031;
+}
+
 .footer__info-mail {
   font-size: 16px;
   line-height: 150%;
@@ -640,6 +648,10 @@ main {
   content: url(../img/mail.svg);
   left: -17px;
   bottom: -1px;
+}
+
+.footer__info-mail:hover {
+  color: #983031;
 }
 
 .footer__info-schedule {
@@ -679,6 +691,10 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.footer__info-social a:hover {
+  background-color: #983031;
 }
 
 .footer__info-title, .footer__info-subtitle, .footer__info-sanction, .footer__info-copyright {

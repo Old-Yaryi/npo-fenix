@@ -362,6 +362,9 @@ main {
       padding: 14px 27px;
       background-color: $second-color;
       margin-right: -2px;
+      &:hover {
+        background-color: $accent-color;
+      }
     }
     &-link {
       position: relative;
@@ -460,6 +463,9 @@ main {
       font-weight: 900;
       font-size: 35px;
       line-height: 130%;
+      &:hover {
+        color: $accent-color;
+      }
     }
     &-mail {
       font-size: 16px;
@@ -472,6 +478,9 @@ main {
         content: url(../img/mail.svg);
         left: -17px;
         bottom: -1px;
+      }
+      &:hover {
+        color: $accent-color;
       }
     }
     &-schedule {
@@ -498,7 +507,11 @@ main {
       display: flex;
       align-items: center;
       justify-content: center;
+        &:hover {
+          background-color: $accent-color;
+        }
       }
+
     }
     &-title, &-subtitle, &-sanction, &-copyright  {
       width: 275px;

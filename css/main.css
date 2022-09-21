@@ -648,6 +648,11 @@ main {
   line-height: 150%;
 }
 
+.footer__logo .footer__info-sanction {
+  color: #2B323C;
+  display: none;
+}
+
 .footer__info {
   background-color: #2B323C;
   padding: 120px 0px 95px 50px;
@@ -806,6 +811,97 @@ main {
     -webkit-column-gap: 6vw;
             column-gap: 6vw;
     padding: 120px 0px 95px 10px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .header__rate-box:nth-last-child(2) {
+    display: none;
+  }
+  .footer__logo {
+    padding: 100px 48px 95px 10px;
+  }
+  .footer__info {
+    -webkit-column-gap: 1vw;
+            column-gap: 1vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header__rate-box:nth-last-child(3) {
+    display: none;
+  }
+  .footer__inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__info {
+    padding: 100px 0 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 75px;
+  }
+  .footer__info-title {
+    margin-top: 47px;
+    margin-bottom: 20px;
+  }
+  .footer__info-item .footer__info-sanction {
+    display: none;
+  }
+  .footer__info-subtitle {
+    margin-bottom: 20px;
+  }
+  .footer__logo {
+    padding: 80px 0 0 0;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__logo::after {
+    display: none;
+  }
+  .footer__logo-box {
+    margin-bottom: 30px;
+  }
+  .footer__logo-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    row-gap: 125px;
+  }
+  .footer__logo-desc .footer__info-sanction {
+    display: block;
+  }
+}
+
+@media (max-width: 900px) {
+  .header__rate-box:nth-last-child(4) {
+    display: none;
+  }
+  .footer__menu-p::before {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

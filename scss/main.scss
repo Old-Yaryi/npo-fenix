@@ -59,74 +59,16 @@ main {
     text-transform: uppercase;
   }
 }
-.menu {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 18px 0;
-  &__link {
-    color: #fff;
-    position: relative;
-    text-align: center;
-    &::before {
-      position: absolute;
-      content: "";
-      height: 4px;
-      background-color: $second-color;
-      left: 50%;
-      width: 0%;
-      transition: width 0.3s ease 0s, left 0.3s ease 0s;
-      bottom: -10px;
-    } 
-    &:hover::before {
-      width: 100%;
-      left: 0%;
-    }
-    &:last-child p::after {
-      display: none;
-    }
-  }
-  &__p {
-    color: #fff;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    transition: color 0.3s ease 0s;
-    &:hover {
-      color: $second-color;
-    }
-    &::after {
-      position: absolute;
-      content: "";
-      width: 6px;
-      height: 6px;
-      background-color: $second-color;
-      opacity: 0.2;
-      border-radius: 50%;
-      top: 11px;
-      right: -5vw;
-    }
-  }
-  &__txt {
-    color: #fff;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 150%;
-    opacity: 0.5;
-    transition: color 0.3s ease 0s;
-    &:hover {
-      color: $second-color;
-    }
-  }
-}
 .header {
   padding-top: 20px;
   &__rate {
-    display: flex;
-    font-size: 12px;
-    margin-bottom: 18px;
-    align-items: center;
-    justify-content: space-between;
+    &-inner { 
+      display: flex;
+      font-size: 12px;
+      margin-bottom: 18px;
+      align-items: center;
+      justify-content: space-between;
+    }
     &-data {
       color: $second-color;
     }
@@ -138,7 +80,7 @@ main {
     }
     &-uom {
       color: $second-color;
-    }
+    }  
   }
   &__menu {
     &-top {
@@ -322,8 +264,110 @@ main {
       color: $primary-color;
     }
   }
-
+  
 }
+.menu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 18px 0;
+  &__link {
+    color: #fff;
+    position: relative;
+    text-align: center;
+    &::before {
+      position: absolute;
+      content: "";
+      height: 4px;
+      background-color: $second-color;
+      left: 50%;
+      width: 0%;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      bottom: -10px;
+    } 
+    &:hover::before {
+      width: 100%;
+      left: 0%;
+    }
+    &:last-child p::after {
+      display: none;
+    }
+  }
+  &__p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    transition: color 0.3s ease 0s;
+    &:hover {
+      color: $second-color;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 6px;
+      height: 6px;
+      background-color: $second-color;
+      opacity: 0.2;
+      border-radius: 50%;
+      top: 11px;
+      right: -5vw;
+    }
+  }
+  &__txt {
+    color: #fff;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    opacity: 0.5;
+    transition: color 0.3s ease 0s;
+    &:hover {
+      color: $second-color;
+    }
+  }
+}
+.breadcrumbs {
+  background-color: #fff;
+  margin-top: 25px;
+  &__item {
+    display: flex;
+    column-gap: 50px;
+    justify-content: flex-start;
+    position: relative;
+    
+    &::after {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      background-image: url(../img/home.svg);
+      left: 0;
+      top: 0;
+    }
+  }
+  &__link {
+    position: relative;
+    &:nth-last-child(1)::before {
+      display: none;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      height: 1rem;
+      width: 1px;
+      background-color: $primary-color ;   
+      opacity: 0.2;
+      transform: rotate(-25.77deg);
+      right: -20px;   
+    }
+    &.breadcrumbs__index {
+      margin-left: 36px;
+      color: $primary-color;
+    }
+  }
+  
+}
+
 .footer {
   position: relative;
   background-color: $primary-color;
@@ -427,7 +471,7 @@ main {
       width: 100%;
       background-color: $bg_accent;
       top: 0;
-      left: -326px; 
+      left: -330px; 
       z-index: 1;  
     }
     &-box {

@@ -69,90 +69,11 @@ main {
   text-transform: uppercase;
 }
 
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 18px 0;
-}
-
-.menu__link {
-  color: #fff;
-  position: relative;
-  text-align: center;
-}
-
-.menu__link::before {
-  position: absolute;
-  content: "";
-  height: 4px;
-  background-color: #BF9D77;
-  left: 50%;
-  width: 0%;
-  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  bottom: -10px;
-}
-
-.menu__link:hover::before {
-  width: 100%;
-  left: 0%;
-}
-
-.menu__link:last-child p::after {
-  display: none;
-}
-
-.menu__p {
-  color: #fff;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  -webkit-transition: color 0.3s ease 0s;
-  transition: color 0.3s ease 0s;
-}
-
-.menu__p:hover {
-  color: #BF9D77;
-}
-
-.menu__p::after {
-  position: absolute;
-  content: "";
-  width: 6px;
-  height: 6px;
-  background-color: #BF9D77;
-  opacity: 0.2;
-  border-radius: 50%;
-  top: 11px;
-  right: -5vw;
-}
-
-.menu__txt {
-  color: #fff;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 150%;
-  opacity: 0.5;
-  -webkit-transition: color 0.3s ease 0s;
-  transition: color 0.3s ease 0s;
-}
-
-.menu__txt:hover {
-  color: #BF9D77;
-}
-
 .header {
   padding-top: 20px;
 }
 
-.header__rate {
+.header__rate-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,6 +363,137 @@ main {
   color: #2B323C;
 }
 
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 18px 0;
+}
+
+.menu__link {
+  color: #fff;
+  position: relative;
+  text-align: center;
+}
+
+.menu__link::before {
+  position: absolute;
+  content: "";
+  height: 4px;
+  background-color: #BF9D77;
+  left: 50%;
+  width: 0%;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  bottom: -10px;
+}
+
+.menu__link:hover::before {
+  width: 100%;
+  left: 0%;
+}
+
+.menu__link:last-child p::after {
+  display: none;
+}
+
+.menu__p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  -webkit-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+}
+
+.menu__p:hover {
+  color: #BF9D77;
+}
+
+.menu__p::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #BF9D77;
+  opacity: 0.2;
+  border-radius: 50%;
+  top: 11px;
+  right: -5vw;
+}
+
+.menu__txt {
+  color: #fff;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+  opacity: 0.5;
+  -webkit-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+}
+
+.menu__txt:hover {
+  color: #BF9D77;
+}
+
+.breadcrumbs {
+  background-color: #fff;
+  margin-top: 25px;
+}
+
+.breadcrumbs__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+}
+
+.breadcrumbs__item::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  background-image: url(../img/home.svg);
+  left: 0;
+  top: 0;
+}
+
+.breadcrumbs__link {
+  position: relative;
+}
+
+.breadcrumbs__link:nth-last-child(1)::before {
+  display: none;
+}
+
+.breadcrumbs__link::before {
+  position: absolute;
+  content: "";
+  height: 1rem;
+  width: 1px;
+  background-color: #2B323C;
+  opacity: 0.2;
+  -webkit-transform: rotate(-25.77deg);
+          transform: rotate(-25.77deg);
+  right: -20px;
+}
+
+.breadcrumbs__link.breadcrumbs__index {
+  margin-left: 36px;
+  color: #2B323C;
+}
+
 .footer {
   position: relative;
   background-color: #2B323C;
@@ -570,7 +622,7 @@ main {
   width: 100%;
   background-color: #F9F9F9;
   top: 0;
-  left: -326px;
+  left: -330px;
   z-index: 1;
 }
 

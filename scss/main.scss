@@ -26,6 +26,11 @@ h1 {
 }
 h2 {
   font-weight: 900;
+  font-size: 36px;
+  line-height: 130%
+}
+h3 {
+  font-weight: 900;
   font-size: 24px;
   line-height: 150%;
   color: $second-color;
@@ -34,7 +39,7 @@ header {
   background-color: $primary-color;
 }
 main {
-  height: 100vh;
+  height: 25vh;
 }
 .container__full {
   width: 100%;
@@ -43,7 +48,8 @@ main {
 }
 .container {
   margin: 0 auto;
-  max-width: 1170px;
+  max-width: 1190px;
+  padding: 0 10px;
 }
 .logo {
   display: flex;
@@ -382,8 +388,9 @@ main {
     position: absolute;
     background-color: #fff;
     top: 0%;
-    max-width: 1170px;
+    display: flex;
     width: 100%;
+    padding-left:10px;
     z-index: 3;
     &::after {
       position: absolute;
@@ -395,7 +402,8 @@ main {
       background-color: #fff; 
    }    
     &-wrapper {
-      display: flex;     
+      display: flex; 
+      width: 100%;    
       margin: 0 auto;
       justify-content: space-between;
       text-align: center;
@@ -577,8 +585,41 @@ main {
 
   }
 }
+// **********ADAPTIVE**********\\
+@media (max-width: 1210px) {
+ .footer__menu {
+   width: 99%;
+ } 
+}
 
-
+@media (max-width: 1170px) {
+  .header {
+    &__rate {
+      &-box {
+        &:nth-last-child(1){
+          display:none;
+        }
+      }
+    }
+    &__menu {
+      &-descrition {
+        justify-content: space-around;
+      }
+    }
+  }
+  .menu {
+    justify-content: space-around;
+  }
+  .footer {
+    &__menu {
+      width: 98%;    
+    }
+    &__info {
+      column-gap: 6vw;
+      padding: 120px 0px 95px 10px;
+    }
+  }
+}
 
 
 

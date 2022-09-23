@@ -41,11 +41,6 @@ header {
 main {
   height: 25vh;
 }
-.container__full {
-  width: 100%;
-  background-color: #fff;
-  padding: 24px 0;
-}
 .container {
   margin: 0 auto;
   max-width: 1190px;
@@ -90,56 +85,65 @@ main {
   }
   &__menu {
     &-top {
+      &_block {
       display: flex;
       justify-content: space-between;
       margin-bottom: 20px;
+      }
+      
     }
     &-descrition {
+      width: 100%;
+      background-color: #fff;
+      padding: 24px 0;
+      &_block {
       background-color: #fff;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      }
     }
     &-nav {
       height: 68px;
     }
-  }
-  &__desc {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    & p {
-      color: #fff;
-    }
-    &-prod {
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 150%;
-      text-transform: uppercase;
-      margin-right: 20px;
-      position: relative;
-      &::before {
-        position: absolute;
-        content: '';
-        background-color: $second-color;
-        height: 100%;
-        width: 1px;
-        right: -20px;
+    &-desc {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      & p {
+        color: #fff;
       }
-    }
-    &-adress {
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 150%;
-      text-transform: uppercase;
-      margin-left: 20px;
-      color: #fff;
-      transition: color 0.3s ease 0s;
-      &:hover {
-        color: $second-color;
+      &_prod {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        text-transform: uppercase;
+        margin-right: 20px;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: '';
+          background-color: $second-color;
+          height: 100%;
+          width: 1px;
+          right: -20px;
+        }
       }
-    }
+      &_adress {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        text-transform: uppercase;
+        margin-left: 20px;
+        color: #fff;
+        transition: color 0.3s ease 0s;
+        &:hover {
+          color: $second-color;
+        }
+      }
+    }  
   }
+  
   &__link {
     display: flex;
     justify-content: space-between;
@@ -605,7 +609,7 @@ main {
       }
     }
     &__menu {
-      &-descrition {
+      &-descrition_block {
         justify-content: space-around;
       }
     }

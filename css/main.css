@@ -43,12 +43,6 @@ main {
   height: 25vh;
 }
 
-.container__full {
-  width: 100%;
-  background-color: #fff;
-  padding: 24px 0;
-}
-
 .container {
   margin: 0 auto;
   max-width: 1190px;
@@ -114,7 +108,7 @@ main {
   color: #BF9D77;
 }
 
-.header__menu-top {
+.header__menu-top_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,6 +119,12 @@ main {
 }
 
 .header__menu-descrition {
+  width: 100%;
+  background-color: #fff;
+  padding: 24px 0;
+}
+
+.header__menu-descrition_block {
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,7 +141,7 @@ main {
   height: 68px;
 }
 
-.header__desc {
+.header__menu-desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,11 +153,11 @@ main {
           justify-content: space-between;
 }
 
-.header__desc p {
+.header__menu-desc p {
   color: #fff;
 }
 
-.header__desc-prod {
+.header__menu-desc_prod {
   font-weight: 700;
   font-size: 14px;
   line-height: 150%;
@@ -166,7 +166,7 @@ main {
   position: relative;
 }
 
-.header__desc-prod::before {
+.header__menu-desc_prod::before {
   position: absolute;
   content: '';
   background-color: #BF9D77;
@@ -175,7 +175,7 @@ main {
   right: -20px;
 }
 
-.header__desc-adress {
+.header__menu-desc_adress {
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
@@ -186,7 +186,7 @@ main {
   transition: color 0.3s ease 0s;
 }
 
-.header__desc-adress:hover {
+.header__menu-desc_adress:hover {
   color: #BF9D77;
 }
 
@@ -796,7 +796,7 @@ main {
   .header__rate-box:nth-last-child(1) {
     display: none;
   }
-  .header__menu-descrition {
+  .header__menu-descrition_block {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }

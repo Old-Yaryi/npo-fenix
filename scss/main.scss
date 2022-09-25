@@ -150,8 +150,7 @@ main {
         background-color: $second-color;
         transition: background-color 0.3s ease 0s;
         &:hover {
-          background-color: $primary-color;
-          border: 1px solid #BF9D77;
+          background-color: rgba(191, 157, 119, 0.2);
         }
       }
       &_vk,&_rusprf {
@@ -183,6 +182,10 @@ main {
         padding: 4px 23px 10px 9px;
         position: relative;
         list-style: none;
+        transition: background-color 0.3s ease 0s;
+        &:hover {
+          background-color: rgba(191, 157, 119, 0.2);
+        }
         &::before {
           position: absolute;
           content: url('../img/language-icon.svg');
@@ -196,6 +199,9 @@ main {
           color: #fff;
           font-size: 12px;
           position: relative;
+          &:hover {
+            background-color: rgba(191, 157, 119, 0.2);
+          }
         }
         &-var {
           list-style: none;
@@ -211,9 +217,7 @@ main {
         }
       }
     }
-  }
-  
-  
+  } 
   &__contact {
     padding: 16px 32px;
     background-color: #FBF7F1;
@@ -224,6 +228,9 @@ main {
       line-height: 150%;
       color: $primary-color;
       position: relative;
+    }
+    & a:hover {
+      color: $second-color;
     }
     &-phone {
       display: none;
@@ -288,8 +295,16 @@ main {
       text-transform: uppercase;
       color: $primary-color;
     }
-  }
-  
+  } 
+  &__burger {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: $accent-color;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+  } 
 }
 .menu {
   display: flex;
@@ -514,6 +529,15 @@ main {
       display: none;
     }
   }
+  &__burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49px;
+    height: 49px;
+    background-color: $accent-color;
+    display: none;
+  }
   &__info {
     background-color: $primary-color;
     padding: 120px 0px 95px 50px;
@@ -700,6 +724,7 @@ main {
         row-gap: 125px;
         & .footer__info-sanction {
         display: block;
+        opacity: 0.4;
         }
       }
     }
@@ -758,6 +783,69 @@ main {
   }
   .footer__menu-p::before {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+  .header {
+    &__menu {
+      &-descrition {
+        &_block {
+          justify-content: space-between;
+        }
+      }
+      &-desc {
+        &_adress {
+          text-transform: none;
+        }
+      }
+      &-nav {
+        display: none;
+      }
+    }
+    &__contact {
+      background-color: #fff;
+    }   
+    &__about {
+      display: none;
+    }
+    &__burger {
+      display: flex;
+    }    
+  }
+  .footer {
+    &__menu {
+      display: none;
+    }
+    &__logo {
+      padding: 75px 0 0 0;
+      & .logo__title {
+        font-size: 18px;
+      }
+      &-box {
+        display: flex;
+        height: 49px;
+        justify-content: space-between;
+      }
+      & .logo__img {
+        height: 100%;
+        & img {
+          height: 100%;
+        }
+      }
+      &-desc {
+        letter-spacing: 0.05em;
+      }
+    }
+    &__burger {
+      display: flex;
+      cursor: pointer;
+    }
+    &__info {
+      padding: 75px 0 0 0;
+    }
   }
 }
 

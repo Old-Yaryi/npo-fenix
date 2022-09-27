@@ -257,6 +257,23 @@ main {
       bottom: -2px;
     }
   }
+  &__mobile {
+    &-btn {
+      display: flex;
+    }
+  }
+  &__phone {
+    &-btn {
+      height: 40px;
+      width: 40px;
+      background-color: $second-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: none;
+      margin-right: 10px;
+    }
+  }
   &__about {
     display: flex;
     flex-direction: column;
@@ -372,12 +389,12 @@ main {
 .breadcrumbs {
   background-color: #fff;
   margin-top: 25px;
+  font-size: 12px;
   &__item {
     display: flex;
     column-gap: 50px;
     justify-content: flex-start;
-    position: relative;
-    
+    position: relative;   
     &::after {
       position: absolute;
       content: "";
@@ -385,7 +402,7 @@ main {
       width: 16px;
       background-image: url(../img/home.svg);
       left: 0;
-      top: 0;
+      top: -3px;
     }
   }
   &__link {
@@ -639,7 +656,7 @@ main {
   background-color: #fff;
   z-index: 10;
   opacity: 0.95;
-  transition: top 0.3s ease 0s;
+  transition: top 0.4s ease 0s;
   &.mobile-active {
     top: 0;
   } 
@@ -692,12 +709,14 @@ main {
     background-color: $bg_accent;
     font-size: 12px;
     border-radius: 0 0 5% 5%;
+    height: 45vw;
     &-contact {
       display: flex;
       flex-direction: column;
       row-gap: 12px;
       position: relative; 
-      margin-bottom: 40px;    
+      margin-bottom: 40px; 
+      padding-top: 40px;   
       & a,p {
         font-size: 14px;
         text-decoration: none;
@@ -1008,9 +1027,161 @@ main {
     }
     &__info {
       padding: 75px 0 0 0;
+      &-tel {
+        text-align: center;
+      }
+    }
+    
+  }
+}
+@media (max-width: 680px) {
+  .header {
+    &__rate-box:nth-last-child(5) {
+    display: none;
+    }
+    &__menu {
+      &-desc {
+        &_prod::before {
+          display: none;
+        }
+        &_adress {
+          display: none;
+        }
+      }
+    }
+    &__contact {
+      display: none;
+    }
+    &__phone-btn {
+      display: flex;
+    }
+  }
+  .footer {
+    &__inner {
+      flex-direction: column;
+    }
+    &__logo {
+      width: 100%;
+      padding: 40px 0 0 0;
+      & .logo__title {
+        font-weight: 900;
+        font-size: 29px;
+        line-height: 130%;
+        width: 40vw;
+      }
+      &-box {
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+      }
+      &-desc {
+        margin-bottom: 50px;
+        & .footer__info-sanction {
+          display: none;
+        }
+      }    
+    }
+    &__info {
+      width: 100%;
+      &-tel {
+        text-align: left;
+      }
+      &-item {
+        width: 280px;
+        & .footer__info-sanction{
+          display: block;
+          margin-bottom: 30px;
+        }
+      }
+    }
+    &__burger {
+      display: none;
+    }
+    
+    
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    &__rate-box:nth-last-child(6) {
+      display: none;
+    }
+    &__menu {
+      &-link {
+        display: none;
+      }
+      &-top_block {
+        justify-content: center;
+      }
+    }
+  }
+  .footer {
+    &__logo {
+      & .logo__title {
+        width: 50vw;
+      }
+    }
+    &__info {
+      padding: 50px 0;
+      margin-bottom: 0;
+      &-item {
+        width: 285px;
+        align-items: center;
+      }
+      &-contact {
+        width: 285px;
+      }
+      &-tel {
+        font-size: 33px;
+      }
+      &-schedule::after {
+        top: 0;
+      }
     }
   }
 }
+@media (max-width: 415px) {
+  .container {
+    padding: 0 20px;
+  }
+  .logo__img {
+    & img {
+    width: 41px;
+    height: 46px;
+    }
+  }
+  .header {
+    &__menu-descrition_block {
+      & .logo__title {
+        font-size: 16px;
+        margin-right: 18px;
+        width: 110px;
+      }
+    }
+  }
+  .footer {
+    &__logo-box {
+      & .logo__title {
+        width: 65vw;
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
 
+  .header {
+    &__rate {
+      display: none;
+    }
+    &__menu-descrition_block {
+      justify-content: start;
+    }
+    &__menu-desc_prod {
+      font-size: 11px;
+      width: 280px;
+      text-align: center;
+    }
+  }
+}
 
 

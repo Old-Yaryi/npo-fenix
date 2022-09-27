@@ -1399,6 +1399,13 @@ main {
   .footer__burger {
     display: none;
   }
+  .mobile__info {
+    height: 65vw;
+  }
+  .mobile__info-social a.photo {
+    width: 25vw;
+    padding: 0 5px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1435,6 +1442,9 @@ main {
   .footer__info-schedule::after {
     top: 0;
   }
+  .mobile__info {
+    height: 75vw;
+  }
 }
 
 @media (max-width: 415px) {
@@ -1452,6 +1462,33 @@ main {
   }
   .footer__logo-box .logo__title {
     width: 65vw;
+  }
+  .mobile__info {
+    height: 110vw;
+  }
+  .mobile__info-contact_adress {
+    position: relative;
+  }
+  .mobile__info-contact_adress::after {
+    top: 0;
+    left: -20px;
+  }
+  .mobile__info-contact_schedule {
+    position: relative;
+  }
+  .mobile__info-contact_schedule::after {
+    top: 0;
+    left: -20px;
+  }
+  .mobile__info-social_photo p {
+    display: none;
+  }
+  .mobile__info-social a.photo {
+    width: 42px;
+    padding: 0;
+  }
+  .mobile__info-social a.photo img {
+    width: 50%;
   }
 }
 

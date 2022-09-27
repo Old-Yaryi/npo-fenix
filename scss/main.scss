@@ -1100,6 +1100,13 @@ main {
     
     
   }
+  .mobile__info {
+    height: 65vw;
+    &-social a.photo {
+    width: 25vw;
+    padding: 0 5px;
+    }
+  }
 }
 @media (max-width: 480px) {
   .header {
@@ -1139,6 +1146,9 @@ main {
       }
     }
   }
+  .mobile__info {
+    height: 75vw;
+  }
 }
 @media (max-width: 415px) {
   .container {
@@ -1166,6 +1176,35 @@ main {
       }
     }
   }
+  .mobile__info {
+    height: 110vw;
+    &-contact_adress {
+      position: relative;
+      &::after {
+        top: 0;
+        left: -20px;
+      }
+    }
+    &-contact_schedule {
+      position: relative;
+      &::after {
+        top: 0;
+        left: -20px;
+      }
+    }
+  }
+  .mobile__info-social_photo {
+    & p {
+    display: none;
+    }
+  }
+  .mobile__info-social a.photo {
+    width: 42px;
+    padding: 0;
+    & img {
+      width: 50%;
+    }
+}
 }
 @media (max-width: 320px) {
 

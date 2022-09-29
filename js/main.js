@@ -24,7 +24,7 @@ mobile_menu_close.addEventListener('click', function() {
 // *******jquerry_slider-header****
 $('.header-slider').slick({
   dots: true,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 3000,
   speed: 700
 });

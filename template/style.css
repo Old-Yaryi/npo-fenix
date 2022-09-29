@@ -73,6 +73,43 @@ main {
   line-height: 130%;
   text-transform: uppercase;
 }
+.button {
+  background-color: #BF9D77;
+  padding: 18px 34px;
+  color: #fff;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.button.button_red {
+  background-color: #983031;
+}
+
+.button.button_red:hover {
+  opacity: 0.9;
+}
+
+.button-arrow {
+  padding: 18px 24px;
+  background-color: #BF9D77;
+  opacity: 0.9;
+  margin-left: -5px;
+}
+
+.button-arrow:hover {
+  opacity: 1;
+}
+
+.button-arrow.button-arrow_red {
+  background-color: #983031;
+  opacity: 0.9;
+}
+
+.button-arrow.button-arrow_red:hover {
+  opacity: 1;
+}
 
 .header {
   padding-top: 20px;

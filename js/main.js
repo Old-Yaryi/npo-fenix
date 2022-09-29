@@ -21,4 +21,12 @@ mobile_menu.forEach(el => {
 mobile_menu_close.addEventListener('click', function() {
   mobile_menu_open.classList.toggle('mobile-active')
 });
+// *******jquerry_slider-header****
+$('.header-slider').slick({
+  dots: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  infinite: true,
+  speed: 700
+});
 

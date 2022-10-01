@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
   <link href="./css/normalize.css" rel="stylesheet">
   <link href="./css/reset.css" rel="stylesheet">
+  <link href="./slick/slick.css" rel="stylesheet">
   <link href="./css/main.css" rel="stylesheet">
 </head>
 <body>
@@ -361,7 +362,12 @@
             <h1>Производство <br> нашей компании</h1>
             <h3>Цветные металлы и сплавы</h3>
             <p>Из цветных металлов в чистом виде и в виде сплавов широко используются: цинк, бронза, олово, различные припои и прочее.</p>
+            <div class="product-slaider__control">
+              <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+              <button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button>
+            </div>
           </div>
+
           <div class="product-slider">
             <div class="product-slider__item">
               <div class="product-slide">
@@ -386,8 +392,9 @@
                       Сплавы цинковые литейные ЦАМ4-1, <br> ЦА4-0 и другие
                     </div>
                     <div class="product-slide__subtitle">блок, чушка</div>
+                    <a class="product-slide__detailed" href="#" >Подробнее</a>
                   </div>
-                  <a class="product-slide__detailed" href="#" >Подробнее</a>
+                 
                 </div>
               </div>
               <div class="product-slide">
@@ -415,6 +422,18 @@
                   </div>
                 </div>
               </div>
+              <div class="product-slide">
+                <div class="product-slide__inner">
+                  <div class="product-slide__img">
+                    <img src="./img/olovo.png" alt="olovo">
+                  </div>
+                  <div class="product-slide__info">
+                    <div class="product-slide__title">Олово О1, <br> О1 пч, О2</div>
+                    <div class="product-slide__subtitle">чушка, пруток, проволока, аноды, гранулы</div>
+                    <a class="product-slide__detailed" href="#" >Подробнее</a>
+                  </div>
+                </div>
+              </div> 
             </div>
           </div>
           <div class="product-span"></div>

@@ -1293,6 +1293,7 @@ main {
 
 .product-info {
   padding: 20px 0 0;
+  width: 470px;
 }
 
 .product-info h1 {
@@ -1309,43 +1310,61 @@ main {
 }
 
 .product-slider__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: 400px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  width: calc(100% + 532px);
+  margin-right: -240px;
+  overflow: hidden;
+}
+
+.product-slider .slick-list {
+  overflow: visible;
 }
 
 .product-slide {
   height: 380px;
   width: 310px;
   position: relative;
+  -webkit-transition: height, top, display, 0.5s ease 0s;
+  transition: height, top, display, 0.5s ease 0s;
+  cursor: pointer;
 }
 
 .product-slide::after {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  height: 380px;
+  width: 310px;
   content: "";
   background: -webkit-gradient(linear, left bottom, left top, color-stop(29.13%, rgba(43, 50, 60, 0.9)), color-stop(98.03%, rgba(43, 50, 60, 0)));
   background: linear-gradient(360deg, rgba(43, 50, 60, 0.9) 29.13%, rgba(43, 50, 60, 0) 98.03%);
   z-index: -1;
 }
 
-.product-slide:hover {
-  height: 400px;
+.product-slide:hover::after {
+  display: none;
 }
 
-.product-slide:hover img {
+.product-slide:hover::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
   height: 400px;
+  width: 310px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(29.13%, rgba(152, 48, 49, 0.9)), color-stop(98.03%, rgba(152, 48, 49, 0.9)));
+  background: linear-gradient(360deg, rgba(152, 48, 49, 0.9) 29.13%, rgba(152, 48, 49, 0.9) 98.03%);
+}
+
+.product-slide:hover .product-slide__detailed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .product-slide__inner {
   position: relative;
+  padding-top: 50px;
+  width: 310px;
 }
 
 .product-slide__img {
@@ -1359,11 +1378,65 @@ main {
   width: 310px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: height, 0.2s ease 0s;
+  transition: height, 0.2s ease 0s;
+}
+
+.product-slide:hover .product-slide__img {
+  top: -20px;
+}
+
+.product-slide:hover img {
+  top: 0;
+  height: 400px;
+  margin-bottom: 20px;
 }
 
 .product-slide__info {
   color: #fff;
   padding: 0 50px;
+}
+
+.product-slide__title {
+  margin-bottom: 40px;
+  position: relative;
+  line-height: 150%;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.product-slide__title::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 55px;
+  background-color: #BF9D77;
+  left: 0;
+  bottom: -20px;
+}
+
+.product-slide__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+
+.product-slide__detailed {
+  position: relative;
+  color: #fff;
+  display: none;
+}
+
+.product-slide__detailed::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/arrow-right.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  left: 100px;
 }
 
 @media (max-width: 1355px) {

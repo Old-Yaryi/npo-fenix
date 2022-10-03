@@ -28,10 +28,14 @@ $('.header-slider').slick({
   autoplaySpeed: 3000,
   speed: 700
 });
-// *******jquerry_slider-product****
-$('.product-slider__item').slick({
-  infinite: true,
-  arrows: true,
-  slidesToShow: 4,
-  slidesToScroll: 1
+// *******lider-product****
+const swiper = new Swiper('.swiper', {
+
+  slidesPerView: 5,
+  centeredSlides: true,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
 });

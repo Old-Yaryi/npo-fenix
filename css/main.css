@@ -1281,6 +1281,9 @@ main {
 
 .product {
   padding: 90px 0 105px;
+  position: relative;
+  overflow: hidden;
+  height: 380px;
 }
 
 .product-item {
@@ -1289,6 +1292,7 @@ main {
   display: flex;
   max-height: 400px;
   height: 100%;
+  position: relative;
 }
 
 .product-info {
@@ -1305,19 +1309,78 @@ main {
   margin-bottom: 30px;
 }
 
+.product-info p {
+  margin-bottom: 80px;
+}
+
+.product-info__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 470px;
+}
+
 .product-slider {
+  position: absolute;
   height: 400px;
+  left: 660px;
+  top: 70px;
+  overflow: hidden;
+  padding-top: 20px;
+  width: 1550px;
 }
 
 .product-slider__item {
   height: 400px;
-  width: calc(100% + 532px);
-  margin-right: -240px;
-  overflow: hidden;
+  min-width: 0;
 }
 
-.product-slider .slick-list {
-  overflow: visible;
+.product-slider__control {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+.product-slider__control .swiper-button-prev {
+  left: 50%;
+}
+
+.product-slider__control .swiper-button-prev::after {
+  position: absolute;
+  content: "";
+  height: 60px;
+  width: 60px;
+  background-color: #BF9D77;
+  background-image: url(../img/header_slider_arrow-right-hover.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product-slider__control .swiper-button-prev:hover::after {
+  background-color: #F9F9F9;
+  background-image: url(../img/header_slider_arrow-right.svg);
+}
+
+.product-slider__control .swiper-button-next {
+  right: 30px;
+}
+
+.product-slider__control .swiper-button-next::after {
+  position: absolute;
+  content: "";
+  height: 60px;
+  width: 60px;
+  background-color: #F9F9F9;
+  background-image: url(../img/header_slider_arrow-right_min-hover.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product-slider__control .swiper-button-next:hover::after {
+  background-color: #BF9D77;
+  background-image: url(../img/header_slider_arrow-right_min.svg);
 }
 
 .product-slide {
@@ -1363,8 +1426,12 @@ main {
 
 .product-slide__inner {
   position: relative;
-  padding-top: 50px;
+  padding-top: 170px;
   width: 310px;
+}
+
+.product-slide__inner:hover {
+  padding-top: 140px;
 }
 
 .product-slide__img {

@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
   <link href="./css/normalize.css" rel="stylesheet">
   <link href="./css/reset.css" rel="stylesheet">
-  <link href="./slick/slick.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <link href="./css/main.css" rel="stylesheet">
 </head>
 <body>
@@ -362,82 +362,129 @@
             <h1>Производство <br> нашей компании</h1>
             <h3>Цветные металлы и сплавы</h3>
             <p>Из цветных металлов в чистом виде и в виде сплавов широко используются: цинк, бронза, олово, различные припои и прочее.</p>
-            <div class="product-slaider__control">
-              <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
-              <button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button>
+            <div class="product-info__control">
+              <div class="button-detailed" href="#">
+                <a class="button">Подробнее</a>
+                <a class="button-arrow">
+                  <img src="./img/arrow-right.svg" alt="arrow-right">
+                </a>
+              </div>
+              <div class="product-slider__control">
+                <div class="
+                product-slider__control_prev swiper-button-prev" ></div>
+                <div class="product-slider__control_next swiper-button-next" ></div>
+              </div>
             </div>
           </div>
-
-          <div class="product-slider">
-            <div class="product-slider__item">
-              <div class="product-slide">
-                <div class="product-slide__inner">
-                  <div class="product-slide__img">
-                    <img src="./img/pripoy.webp" alt="pripoy">
-                  </div>
-                  <div class="product-slide__info">
-                    <div class="product-slide__title">Припои на основе индия <br> ПОИн10, ПОИн52, <br> ПОИн90 и другие </div>
-                    <div class="product-slide__subtitle">фольга, пруток, проволока, слиток</div>
-                    <a class="product-slide__detailed" href="#" >Подробнее</a>
-                  </div>
-                </div>
-              </div>
-              <div class="product-slide">
-                <div class="product-slide__inner">
-                  <div class="product-slide__img">
-                    <img src="./img/chushka.webp" alt="chushka">
-                  </div>
-                  <div class="product-slide__info">
-                    <div class="product-slide__title">
-                      Сплавы цинковые литейные ЦАМ4-1, <br> ЦА4-0 и другие
-                    </div>
-                    <div class="product-slide__subtitle">блок, чушка</div>
-                    <a class="product-slide__detailed" href="#" >Подробнее</a>
-                  </div>
-                 
-                </div>
-              </div>
-              <div class="product-slide">
-                <div class="product-slide__inner">
-                  <div class="product-slide__img">
-                    <img src="./img/olovo.png" alt="olovo">
-                  </div>
-                  <div class="product-slide__info">
-                    <div class="product-slide__title">Олово О1, <br> О1 пч, О2</div>
-                    <div class="product-slide__subtitle">чушка, пруток, проволока, аноды, гранулы</div>
-                    <a class="product-slide__detailed" href="#" >Подробнее</a>
-                  </div>
-                </div>
-              </div>
-              <div class="product-slide">
-                <div class="product-slide__inner">
-                  <div class="product-slide__img">
-                    <img src="./img/plumbum.webp" alt="pbm">
-                  </div>
-                  <div class="product-slide__info">
-                    <div class="product-slide__title">Свинец С0, С1, С2, <br> С3, ССУ, ССУА <br> и другие
-                      чушка, блок</div>
-                    <div class="product-slide__subtitle">чушка, блок</div>
-                    <a class="product-slide__detailed" href="#" >Подробнее</a>
-                  </div>
-                </div>
-              </div>
-              <div class="product-slide">
-                <div class="product-slide__inner">
-                  <div class="product-slide__img">
-                    <img src="./img/olovo.png" alt="olovo">
-                  </div>
-                  <div class="product-slide__info">
-                    <div class="product-slide__title">Олово О1, <br> О1 пч, О2</div>
-                    <div class="product-slide__subtitle">чушка, пруток, проволока, аноды, гранулы</div>
-                    <a class="product-slide__detailed" href="#" >Подробнее</a>
-                  </div>
-                </div>
-              </div> 
-            </div>
-          </div>
-          <div class="product-span"></div>
+          <!-- <div class="product-span"></div> -->
         </div>
+      </div>  
+      <div class="product-slider swiper">
+          <div class="product-slider__item swiper-wrapper">
+            <div class="product-slide swiper-slide">
+              <div class="product-slide__inner">
+                <div class="product-slide__img">
+                  <img src="./img/pripoy.webp" alt="pripoy">
+                </div>
+                <div class="product-slide__info">
+                  <div class="product-slide__title">Припои на основе индия <br> ПОИн10, ПОИн52, <br> ПОИн90 и другие </div>
+                  <div class="product-slide__subtitle">фольга, пруток, проволока, слиток</div>
+                  <a class="product-slide__detailed" href="#" >Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-slide swiper-slide">
+              <div class="product-slide__inner">
+                <div class="product-slide__img">
+                  <img src="./img/chushka.webp" alt="chushka">
+                </div>
+                <div class="product-slide__info">
+                  <div class="product-slide__title">
+                    Сплавы цинковые литейные ЦАМ4-1, <br> ЦА4-0 и другие
+                  </div>
+                  <div class="product-slide__subtitle">блок, чушка</div>
+                  <a class="product-slide__detailed" href="#" >Подробнее</a>
+                </div>
+               
+              </div>
+            </div>
+            <div class="product-slide swiper-slide">
+              <div class="product-slide__inner">
+                <div class="product-slide__img">
+                  <img src="./img/olovo.png" alt="olovo">
+                </div>
+                <div class="product-slide__info">
+                  <div class="product-slide__title">Олово О1, <br> О1 пч, О2</div>
+                  <div class="product-slide__subtitle">чушка, пруток, проволока, аноды, гранулы</div>
+                  <a class="product-slide__detailed" href="#" >Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-slide swiper-slide">
+              <div class="product-slide__inner">
+                <div class="product-slide__img">
+                  <img src="./img/plumbum.webp" alt="pbm">
+                </div>
+                <div class="product-slide__info">
+                  <div class="product-slide__title">Свинец С0, С1, С2, <br> С3, ССУ, ССУА <br> и другие
+                    чушка, блок</div>
+                  <div class="product-slide__subtitle">чушка, блок</div>
+                  <a class="product-slide__detailed" href="#" >Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-slide swiper-slide">
+              <div class="product-slide__inner">
+                <div class="product-slide__img">
+                  <img src="./img/olovo.png" alt="olovo">
+                </div>
+                <div class="product-slide__info">
+                  <div class="product-slide__title">Олово О1, <br> О1 пч, О2</div>
+                  <div class="product-slide__subtitle">чушка, пруток, проволока, аноды, гранулы</div>
+                  <a class="product-slide__detailed" href="#" >Подробнее</a>
+                </div>
+              </div>
+            </div> 
+            <div class="product-slide swiper-slide">
+              <div class="product-slide__inner">
+                <div class="product-slide__img">
+                  <img src="./img/chushka.webp" alt="chushka">
+                </div>
+                <div class="product-slide__info">
+                  <div class="product-slide__title">
+                    Сплавы цинковые литейные ЦАМ4-1, <br> ЦА4-0 и другие
+                  </div>
+                  <div class="product-slide__subtitle">блок, чушка</div>
+                  <a class="product-slide__detailed" href="#" >Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-slide swiper-slide">
+              <div class="product-slide__inner">
+                <div class="product-slide__img">
+                  <img src="./img/plumbum.webp" alt="pbm">
+                </div>
+                <div class="product-slide__info">
+                  <div class="product-slide__title">Свинец С0, С1, С2, <br> С3, ССУ, ССУА <br> и другие
+                    чушка, блок</div>
+                  <div class="product-slide__subtitle">чушка, блок</div>
+                  <a class="product-slide__detailed" href="#" >Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-slide swiper-slide">
+              <div class="product-slide__inner">
+                <div class="product-slide__img">
+                  <img src="./img/pripoy.webp" alt="pripoy">
+                </div>
+                <div class="product-slide__info">
+                  <div class="product-slide__title">Припои на основе индия <br> ПОИн10, ПОИн52, <br> ПОИн90 и другие </div>
+                  <div class="product-slide__subtitle">фольга, пруток, проволока, слиток</div>
+                  <a class="product-slide__detailed" href="#" >Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </section>
   </main>
@@ -521,6 +568,7 @@
   </footer> 
     <script src="./js/jquery-3.6.1.min.js"></script>
     <script src="./slick/slick.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

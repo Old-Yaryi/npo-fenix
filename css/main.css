@@ -1383,6 +1383,25 @@ main {
   background-image: url(../img/header_slider_arrow-right_min.svg);
 }
 
+.product-slider .swiper-slide.swiper-slide-prev .product-slide__img {
+  top: -20px;
+}
+
+.product-slider .swiper-slide.swiper-slide-prev .product-slide__img img {
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.product-slider .swiper-slide.swiper-slide-prev::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  height: 400px;
+  width: 310px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(29.13%, rgba(152, 48, 49, 0.9)), color-stop(98.03%, rgba(152, 48, 49, 0.9)));
+  background: linear-gradient(360deg, rgba(152, 48, 49, 0.9) 29.13%, rgba(152, 48, 49, 0.9) 98.03%);
+}
+
 .product-slide {
   height: 380px;
   width: 310px;
@@ -1445,8 +1464,6 @@ main {
   width: 310px;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: height, 0.2s ease 0s;
-  transition: height, 0.2s ease 0s;
 }
 
 .product-slide:hover .product-slide__img {

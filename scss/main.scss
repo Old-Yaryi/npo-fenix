@@ -985,7 +985,7 @@ main {
   &-slider {
     position: absolute;
     height: 400px;
-    left: 660px;
+    left: 43vw;
     top: 70px;
     overflow: hidden;
     padding-top: 20px;
@@ -1050,6 +1050,18 @@ main {
       height: 400px;
       width: 310px;
       background: linear-gradient(360deg, rgba(152, 48, 49, 0.9) 29.13%, rgba(152, 48, 49, 0.9) 98.03%);
+    }
+    &__bgr {
+      &::before {
+        position: absolute;
+        content: "";
+        height: 400px;
+        width: 16vw;
+        top: 0;
+        left: 43vw;
+        background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+        z-index: 20;
+      }
     }
   }
   &-slide {
@@ -1153,10 +1165,6 @@ main {
     }
 
   }
-  
-
-  
-
 }
 
 // **********ADAPTIVE**********\\
@@ -1219,6 +1227,12 @@ main {
 @media (max-width: 1080px) {
   .header__rate-box:nth-last-child(2) {
     display: none;
+  }
+  .container {
+    padding: 0 23px;
+  }
+  .product-slider {
+    left: 50vw;
   }
   .footer {
     &__logo {
@@ -1330,6 +1344,9 @@ main {
       }
     }
   }
+  .product-slider {
+    left: 60vw;
+  }
   .footer__menu-p::before {
     display: none;
   }
@@ -1380,6 +1397,71 @@ main {
       }
 
     }   
+  }
+  .product {
+    &-info {
+      width: 395px;
+      & h1 {
+        width: 395px;
+      }
+      &__control {
+        width: 395px;
+        display: flex;
+        & .button-detailed {
+          width: 240px;
+          height: 60px;
+        }
+        & .button {
+          padding: 20px 34px;
+        }
+        & .button-arrow  {
+          padding: 20px 24px;
+        }
+      }
+    }
+    &-slider {
+      width: 1515px;
+      left: 55vw;
+      &__control {
+        margin-left: -20px;
+        & .swiper-button-prev {
+          left: 23%;
+        }
+        & .swiper-button-next {
+          right: 45px;
+        }
+      }
+      & .swiper-slide.swiper-slide-prev {
+        & .product-slide__img {
+          top: 0px;
+          & img {
+            height: 380px;
+            margin-bottom: 0px;
+          }
+        } 
+      }
+      & .swiper-slide.swiper-slide-prev::before {
+        display: none;
+      }
+
+
+
+    }
+    &-slide {
+      &__inner {
+        width: 295px;
+      }
+      &__img img {
+        width: 295px;
+      }
+      &::after {
+        width: 295px;
+      }
+    }
+  }
+  .button-detailed {
+    margin-right: 35px;
+    display: flex;
   }
   .footer {
     &__menu {

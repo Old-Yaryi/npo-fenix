@@ -1424,6 +1424,24 @@ main {
   .product-slider {
     left: 60vw;
   }
+  .how {
+    &__item {
+      flex-direction: column;
+    }
+    &__inner {
+      display: flex;
+      column-gap: 30px;
+      &-arrow {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        & img {
+          rotate: 90deg;
+          width: auto;
+        }
+      }
+    }
+  }
   .footer__menu-p::before {
     display: none;
   }

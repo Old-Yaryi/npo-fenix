@@ -1741,6 +1741,58 @@ main {
       }
     }
   }
+  .product {
+    padding: 37px 0 50px;
+    height: 760px;
+    &-info {
+      padding: 0;
+      width: 280px;
+      & h1 {
+        font-size: 28px;
+      }
+      & h3 {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      & p {
+        margin-bottom: 460px;
+      }
+      &__control {
+        width: 280px;
+        & .button-arrow {
+          display: none;
+        }
+        & .button-detailed {
+          margin-right: 10px;
+        }
+      }
+    }
+    &-slider {
+      top: 280px;
+      left: 10px;
+      width: 860px;
+      &__control .swiper-button-next {
+        right: -3px;
+      }
+      & .swiper-slide.swiper-slide-prev:hover::before {
+        width: 280px;
+      }
+    }
+    &-slide {
+      &__inner {
+        width: 280px;
+        & img {
+          width: 280px;
+        }
+      }
+      &::after {
+        width: 280px;
+      }
+      // &:hover::before {
+      //   width: 280px;
+      // }
+    }
+  }
   .footer {
     &__logo-box {
       & .logo__title {

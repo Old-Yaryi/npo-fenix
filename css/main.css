@@ -2082,6 +2082,53 @@ main {
     margin-right: 18px;
     width: 110px;
   }
+  .product {
+    padding: 37px 0 50px;
+    height: 760px;
+  }
+  .product-info {
+    padding: 0;
+    width: 280px;
+  }
+  .product-info h1 {
+    font-size: 28px;
+  }
+  .product-info h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .product-info p {
+    margin-bottom: 460px;
+  }
+  .product-info__control {
+    width: 280px;
+  }
+  .product-info__control .button-arrow {
+    display: none;
+  }
+  .product-info__control .button-detailed {
+    margin-right: 10px;
+  }
+  .product-slider {
+    top: 280px;
+    left: 10px;
+    width: 860px;
+  }
+  .product-slider__control .swiper-button-next {
+    right: -3px;
+  }
+  .product-slider .swiper-slide.swiper-slide-prev:hover::before {
+    width: 280px;
+  }
+  .product-slide__inner {
+    width: 280px;
+  }
+  .product-slide__inner img {
+    width: 280px;
+  }
+  .product-slide::after {
+    width: 280px;
+  }
   .footer__logo-box .logo__title {
     width: 65vw;
   }

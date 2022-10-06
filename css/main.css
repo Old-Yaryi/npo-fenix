@@ -1309,6 +1309,7 @@ main {
 .product-info h1 {
   margin-bottom: 10px;
   width: 470px;
+  text-transform: uppercase;
 }
 
 .product-info h3 {
@@ -1637,6 +1638,10 @@ main {
   margin-bottom: 10px;
 }
 
+.laboratory__info_title h1 {
+  text-transform: uppercase;
+}
+
 .laboratory__info_subtitle {
   margin-bottom: 30px;
 }
@@ -1780,6 +1785,18 @@ main {
   .header-slider .slick-dots {
     right: 400px;
   }
+  .laboratory__info, .laboratory__slider {
+    width: 50%;
+  }
+  .laboratory__slider .slick-next {
+    right: 0;
+  }
+  .laboratory__slider .slick-prev {
+    right: 135px;
+  }
+  .laboratory__slider .slick-dots {
+    right: 400px;
+  }
 }
 
 @media (max-width: 1170px) {
@@ -1793,6 +1810,12 @@ main {
   .menu {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .laboratory__link {
+    left: 315px;
+  }
+  .laboratory__slider .slick-dots {
+    right: 340px;
   }
   .footer__menu {
     width: 98%;
@@ -1813,6 +1836,32 @@ main {
   }
   .product-slider {
     left: 50vw;
+  }
+  .laboratory__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .laboratory__info {
+    width: 100%;
+  }
+  .laboratory__info_text {
+    margin-bottom: 70px;
+  }
+  .laboratory__link {
+    position: relative;
+    left: 0;
+    margin-bottom: 50px;
+  }
+  .laboratory__slider {
+    width: 100%;
+  }
+  .laboratory__slider .slick-dots {
+    right: 530px;
+  }
+  .laboratory__slide img {
+    width: 99vw;
   }
   .footer__logo {
     padding: 100px 48px 95px 10px;
@@ -2091,6 +2140,10 @@ main {
   }
   .how {
     padding: 64px 0 60px;
+    margin-bottom: 70px;
+  }
+  .laboratory {
+    margin-bottom: 80px;
   }
   .footer__menu {
     display: none;

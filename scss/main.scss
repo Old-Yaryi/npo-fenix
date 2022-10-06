@@ -976,6 +976,7 @@ main {
     & h1 {
       margin-bottom: 10px;
       width: 470px;
+      text-transform: uppercase;
     }
     & h3 {
       margin-bottom: 30px;
@@ -1241,6 +1242,9 @@ main {
     margin-right: 50px;
     &_title {
       margin-bottom: 10px;
+      & h1 {
+        text-transform: uppercase;
+      }
     }
     &_subtitle {
       margin-bottom: 30px;
@@ -1352,16 +1356,32 @@ main {
 @media (max-width: 1210px) {
  .footer__menu {
    width: 99%;
- } 
+  } 
  .header-slider .slick-next{
   right: 20px;
-}
-.header-slider .slick-prev {
-  right: 155px;
-}
-.header-slider .slick-dots {
-  right: 400px;
-}
+  }
+  .header-slider .slick-prev {
+    right: 155px;
+  }
+  .header-slider .slick-dots {
+    right: 400px;
+  }
+  .laboratory {
+    &__info, &__slider {
+      width: 50%;
+    }
+    &__slider {
+      & .slick-next {
+        right: 0;
+      }
+      & .slick-prev {
+        right: 135px;
+      }
+      & .slick-dots {
+        right: 400px;
+      }
+    }
+  }
 }
 @media (max-width: 1170px) {
   .header {
@@ -1380,6 +1400,16 @@ main {
   }
   .menu {
     justify-content: space-around;
+  }
+  .laboratory {
+    &__link {
+      left: 315px;
+    }
+    &__slider {
+      & .slick-dots {
+        right: 340px;
+      }
+    }
   }
   .footer {
     &__menu {
@@ -1400,6 +1430,33 @@ main {
   }
   .product-slider {
     left: 50vw;
+  }
+  .laboratory {
+    &__item {
+      flex-direction: column;
+    }
+    &__info {
+      width: 100%;
+      &_text {
+        margin-bottom: 70px;
+      }
+    }
+    &__link {
+      position: relative;
+      left: 0;
+      margin-bottom: 50px;
+    }
+    &__slider {
+      width: 100%;
+      & .slick-dots {
+        right: 530px;
+      }
+    }
+    &__slide {
+      & img {
+        width: 99vw;
+      }
+    }
   }
   .footer {
     &__logo {
@@ -1669,6 +1726,10 @@ main {
   }
   .how {
     padding: 64px 0 60px;
+    margin-bottom: 70px;
+  }
+  .laboratory {
+    margin-bottom: 80px;
   }
   .footer {
     &__menu {

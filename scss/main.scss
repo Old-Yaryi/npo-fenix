@@ -1206,24 +1206,22 @@ main {
       &_begin::after {
         content: "";
         position: absolute;
-        height: 5px;
-        width: 5px;
+        height: 9px;
+        width: 9px;
         border-radius: 50%;
         background-color: #BF9D77;
-        opacity: 0.5;
         left: 0;
-        top: 50%;
+        top: 4px;
       }
       &_end::after {
         content: "";
         position: absolute;
-        height: 5px;
-        width: 5px;
+        height: 9px;
+        width: 9px;
         border-radius: 50%;
         background-color: #BF9D77;
-        opacity: 0.5;
         right: 0;
-        top: 50%;
+        top: 4px;
       }
     }
     &-text {
@@ -1431,15 +1429,34 @@ main {
     &__inner {
       display: flex;
       column-gap: 30px;
+      width: 100%;
+      padding: 13px 0;
       &-arrow {
-        display: flex;
-        align-items: center;
-        height: 100%;
+       rotate: 90deg;
+       width: 5px;
+       margin-bottom: 0;
+       height: 15px;
+       top: -5px;
         & img {
-          rotate: 90deg;
-          width: auto;
+          width: 60px;
+          height: 5px;
+        }
+        &.how__inner-arrow_begin::after {
+          height: 5px;
+          width: 5px;
+          top: 8px;
+        }
+        &.how__inner-arrow_end::after {
+          right: -56px;
+          height: 5px;
+          width: 5px;
+          top: 8px;
         }
       }
+      &-text {
+        padding: 13px 0;
+      }
+
     }
   }
   .footer__menu-p::before {
@@ -1557,6 +1574,9 @@ main {
   .button-detailed {
     margin-right: 35px;
     display: flex;
+  }
+  .how {
+    padding: 64px 0 60px;
   }
   .footer {
     &__menu {
@@ -1875,6 +1895,18 @@ main {
       // &:hover::before {
       //   width: 280px;
       // }
+    }
+  }
+  .how {
+    padding: 34px 0 43px;
+    &__inner {
+      column-gap: 15px;
+      &-text {
+        padding: 0;
+      }
+      &-img {
+        margin-bottom: 20px;
+      }
     }
   }
   .footer {

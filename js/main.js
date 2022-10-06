@@ -28,7 +28,7 @@ $('.header-slider').slick({
   autoplaySpeed: 3000,
   speed: 700
 });
-// *******lider-product****
+// *******Slider-product****
 const swiper = new Swiper('.swiper', {
 
   slidesPerView: 5,
@@ -52,5 +52,8 @@ const swiper = new Swiper('.swiper', {
     },
     
   }
-
 });
+// ********laboratory-slyder*******
+$('.laboratory__slider').slick({
+  dots: true
+})

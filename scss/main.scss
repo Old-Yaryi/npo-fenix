@@ -1231,6 +1231,98 @@ main {
     }
   }
 }
+.laboratory {
+  margin-bottom: 100px;
+  &__item {
+    display: flex;
+    position: relative;
+  }
+  &__info {
+    margin-right: 50px;
+    &_title {
+      margin-bottom: 10px;
+    }
+    &_subtitle {
+      margin-bottom: 30px;
+    }
+    &_text {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
+  &__link {
+    position: absolute;
+    bottom: 22px;
+  }
+  &__slider {
+    overflow: hidden;
+    position: relative;
+    & .slick-track {
+      display: flex;
+    }
+    & .slick-arrow {
+      position: absolute;
+      bottom: 3px;
+      right: 200px;
+      z-index: 5;
+      border: none;
+      font-size: 0;
+    }
+    & .slick-prev {
+      right: 145px;
+      height: 85px;
+      width: 85px;
+      background-color: #fff;
+      background-image: url(../img/header_slider_arrow-right.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: background-color 0.2s ease 0s;
+      cursor: pointer;
+      &:hover {
+        background-color: $second-color;
+        background-image: url(../img/header_slider_arrow-right-hover.svg);
+      }
+    }
+    & .slick-next {
+      right: 10px;
+      height: 85px;
+      width: 136px;
+      background-color: $second-color;
+      background-image: url(../img/header_slider_arrow-left_hover.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: background-color 0.2s ease 0s;
+      cursor: pointer;
+      &:hover {
+        background-color: #fff;
+        background-image: url(../img/header_slider_arrow-left.svg);
+      }
+    }
+    & .slick-dots {
+      display: flex;
+      font-size: 0;
+      position: absolute;
+      bottom: 42px;
+      right: 425px;
+      column-gap: 10px;
+      & li {
+        list-style: none;
+        &.slick-active {
+          & button {
+            background-color: $second-color;
+          }
+        }
+      }
+      & button {
+        height: 2px;
+        width: 35px;
+        background-color: #fff;
+        border: none;
+      }
+    }
+  }
+}
 
 // **********ADAPTIVE**********\\
 @media (max-width: 1500px) {
@@ -1899,6 +1991,11 @@ main {
   }
   .how {
     padding: 34px 0 43px;
+    & h1 {
+      font-size: 33px;
+      text-transform: none;
+      width: 280px;
+    }
     &__inner {
       column-gap: 15px;
       &-text {

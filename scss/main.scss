@@ -1730,6 +1730,9 @@ main {
   }
   .laboratory {
     margin-bottom: 80px;
+    &__slide img {
+      width: 92vw;
+    }
   }
   .footer {
     &__menu {
@@ -1854,6 +1857,9 @@ main {
     &-info p {
       margin-bottom: 450px;
     }
+  }
+  .laboratory__slider .slick-dots {
+    right: 287px;
   }
   .footer {
     &__inner {
@@ -2015,12 +2021,17 @@ main {
         margin-bottom: 460px;
       }
       &__control {
-        width: 280px;
+        width: 260px;
         & .button-arrow {
           display: none;
         }
         & .button-detailed {
           margin-right: 10px;
+          margin-left: -9px;
+
+        }
+        & .swiper-button-prev {
+          left: 15%;
         }
       }
     }
@@ -2052,6 +2063,7 @@ main {
   }
   .how {
     padding: 34px 0 43px;
+    margin-bottom: 37px;
     & h1 {
       font-size: 33px;
       text-transform: none;
@@ -2065,6 +2077,62 @@ main {
       &-img {
         margin-bottom: 20px;
       }
+    }
+  }
+  .laboratory {
+    margin-bottom: 50px;
+    &__info {
+      &_title {
+        & h1 {
+          font-size: 28px;
+          text-transform: none;
+          margin-bottom: 10px;
+        }
+      }
+      &_subtitle h3 {
+        font-weight: 700;
+        font-size: 16px;
+      }
+      &_text {
+        margin-bottom: 50px;
+      }
+    }
+    &__link {
+      margin-bottom: 30px;
+      & .button-detailed {
+        margin-right: 0;
+        & .button {
+          width: 230px;
+        }
+      }
+      & .button-arrow{
+        margin-left: 0;
+      }
+    }
+    &__slider {
+      & .slick-prev {
+        height: 60px;
+        width: 60px;
+        right: 60px;
+      }
+      & .slick-next {
+        height: 60px;
+        width: 60px;
+        background-image: url(../img/header_slider_arrow-right_min.svg);
+        &:hover {
+          background-image: url(../img/header_slider_arrow-right_min-hover.svg);
+        }
+      }
+      & .slick-dots {
+        right: 150px;
+        bottom: 32px;
+        & button {
+          width: 25px;
+        }
+      }
+    }
+    &__slide img {
+      width: 100vw;
     }
   }
   .footer {

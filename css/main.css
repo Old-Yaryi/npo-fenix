@@ -51,6 +51,12 @@ main {
   height: 100%;
 }
 
+.accent__background_left {
+  max-width: 1720px;
+  width: 100%;
+  background-color: #F9F9F9;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1190px;
@@ -1279,12 +1285,6 @@ main {
   display: block;
 }
 
-.accent__background_left {
-  max-width: 1720px;
-  width: 100%;
-  background-color: #F9F9F9;
-}
-
 .product {
   padding: 90px 0 105px;
   position: relative;
@@ -1419,6 +1419,7 @@ main {
   background: -webkit-gradient(linear, right top, left top, from(#FFFFFF), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
   z-index: 20;
+  pointer-events: none;
 }
 
 .product-slide {
@@ -1743,6 +1744,76 @@ main {
   width: 35px;
   background-color: #fff;
   border: none;
+}
+
+.delivery {
+  background-color: #F9F9F9;
+  padding: 90px 0;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 90px;
+}
+
+.delivery .container::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: calc(13% - 120px);
+  background-color: #fff;
+  z-index: 2;
+  left: 0;
+  top: 0;
+}
+
+.delivery__map {
+  position: absolute;
+  content: "";
+  height: 100%;
+  top: -110px;
+  left: 210px;
+  z-index: -1;
+}
+
+.delivery h1 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.delivery h3 {
+  margin-bottom: 30px;
+}
+
+.delivery__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.delivery__inner {
+  padding: 30px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.delivery__text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
 }
 
 @media (max-width: 1500px) {

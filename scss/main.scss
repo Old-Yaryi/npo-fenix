@@ -49,6 +49,12 @@ h4 {
 main {
   height: 100%;
 }
+.accent__background_left {
+  max-width: 1720px;
+  width: 100%;
+  background-color: $bg_accent;
+
+}
 .container {
   margin: 0 auto;
   max-width: 1190px;
@@ -952,12 +958,7 @@ main {
     }
   }
 }
-.accent__background_left {
-  max-width: 1720px;
-  width: 100%;
-  background-color: $bg_accent;
 
-}
 // *******MAIN*********
 .product {
   padding: 90px 0 105px;
@@ -1068,6 +1069,7 @@ main {
         left: 43vw;
         background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
         z-index: 20;
+        pointer-events: none;
       }
     }
   }
@@ -1325,6 +1327,56 @@ main {
         border: none;
       }
     }
+  }
+}
+.delivery {
+  background-color: $bg_accent;
+  padding: 90px 0;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 90px;
+  & .container::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: calc(13% - 120px);
+    background-color: #fff;
+    z-index: 2;
+    left: 0;
+    top: 0;
+  }
+  &__map {
+    position: absolute;
+    content: "";
+    height: 100%;
+    top: -110px;
+    left: 210px;
+    z-index: -1;
+  }
+  & h1 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  & h3 {
+    margin-bottom: 30px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 50px;
+  }
+  &__inner {
+    padding: 30px 40px;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    column-gap: 30px;
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
   }
 }
 

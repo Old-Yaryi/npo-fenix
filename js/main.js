@@ -57,3 +57,8 @@ const swiper = new Swiper('.swiper', {
 $('.laboratory__slider').slick({
   dots: true
 })
+// *********partners__slider*******
+$('.partners__slider').slick({
+  slidesToShow: 3
+
+});

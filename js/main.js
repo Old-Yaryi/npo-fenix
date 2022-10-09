@@ -59,6 +59,22 @@ $('.laboratory__slider').slick({
 })
 // *********partners__slider*******
 $('.partners__slider').slick({
-  slidesToShow: 3
+  slidesToShow: 3,
+  speed: 1500,
+  responsive: [
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 2
+      }    
+    },
+    {
+      breakpoint: 680,
+      settings: {
+        slidesToShow: 1,
+        speed: 3000
+      }    
+    }
+  ]
 
 });

@@ -1372,6 +1372,7 @@ main {
     background-color: #fff;
     align-items: center;
     column-gap: 30px;
+    box-shadow: 0px 20px 50px rgba(55, 32, 14, 0.1);
   }
   &__text {
     font-weight: 700;
@@ -1385,6 +1386,7 @@ main {
     display: flex;
     column-gap: 30px;
     position: relative;
+    justify-content: space-between;
   }
   &__inner {
     overflow: hidden;
@@ -1480,6 +1482,11 @@ main {
   .accent__background_left::before {
     width: 4%;
   }
+  .partners {
+    &__slider {
+      width: calc(70vw - 200px);
+    }
+  }
 }
 @media (max-width: 1300px) {
   .accent__background_left::before {
@@ -1526,6 +1533,11 @@ main {
       }
     }
   }
+  .partners {
+    &__slider {
+      width: calc(75vw - 200px);
+    }
+  }
 }
 @media (max-width: 1170px) {
   .header {
@@ -1567,6 +1579,11 @@ main {
     }
     &__text {
       width: 140px;
+    }
+  }
+  .partners {
+    &__slider {
+      width: calc(70vw - 200px);
     }
   }
   .footer {
@@ -1615,6 +1632,15 @@ main {
         width: 99vw;
       }
     }
+  }
+  .partners {
+    &__inner {
+      width: 50vw;
+    }
+    &__slider {
+      width: 60vw;
+    }
+
   }
   .footer {
     &__logo {
@@ -1778,6 +1804,21 @@ main {
     }
     &__text {
       font-size: 16px;
+    }
+  }
+  .partners {
+    &__info {
+      width: 340px;
+      margin-right: 10px;
+    }
+    &__slider {
+      width: 60vw;
+      &-block {
+        margin-right: 12px;
+      }
+      & .slick-list {
+        overflow: visible;
+      }
     }
   }
   .footer__menu-p::before {
@@ -2059,6 +2100,36 @@ main {
       width: 152px;
     }
   }
+  .partners{
+    &__item {
+      flex-direction: column;
+    }
+    &__inner {
+      width: 100%;
+    }
+    &__info {
+      margin: 0 auto;
+      & p {
+        margin-bottom: 30px;
+      }
+    }
+    &__slider {
+      width: 300vw;
+      & .slick-arrow {
+        bottom: -90px;
+      }
+      &-inner {
+        flex-direction: row;
+        // width: 300vw;
+      }
+      &-item {
+        width: 300%;
+      }
+      &-block {
+        padding: 0 20vw;
+      }
+    }
+  }
   .footer {
     &__inner {
       flex-direction: column;
@@ -2335,6 +2406,7 @@ main {
   }
   .delivery {
     padding: 40px 0 60px;
+    margin-bottom: 36px;
     & h1 {
       text-transform: none;
       font-size: 28px;
@@ -2348,6 +2420,25 @@ main {
     }
     &__inner {
       column-gap: 20px;
+    }
+  }
+  .partners {
+    margin-bottom: 140px;
+    &__info {
+      width: 280px;
+      & h1 {
+        font-size: 28px;
+        text-transform: none;
+      }
+      & h3 {
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+    &__slider-block {
+      padding: 0 70px;
+      margin-right: 10px;
     }
   }
   .footer {

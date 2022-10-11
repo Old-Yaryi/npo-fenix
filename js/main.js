@@ -60,7 +60,7 @@ $('.laboratory__slider').slick({
 // *********partners__slider*******
 $('.partners__slider').slick({
   slidesToShow: 3,
-  speed: 1500,
+  speed: 500,
   responsive: [
     {
       breakpoint: 900,
@@ -71,8 +71,8 @@ $('.partners__slider').slick({
     {
       breakpoint: 680,
       settings: {
-        slidesToShow: 1,
-        speed: 3000
+        slidesToShow: 1
+        // speed: 3000
       }    
     }
   ]

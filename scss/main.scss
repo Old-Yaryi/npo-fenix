@@ -1462,6 +1462,21 @@ main {
     }
   }
 }
+.blog {
+  background-color: $bg_accent;
+  padding: 83px 0 100px;
+  &__item {
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+  }
+  &__inner {
+    width: 370px;
+    &.list-article {
+      width: 350px;
+    }
+  }
+}
 
 // **********ADAPTIVE**********\\
 @media (max-width: 1500px) {
@@ -1813,6 +1828,9 @@ main {
     }
     &__slider {
       width: 60vw;
+      // &:last-child {
+      //   display: none;
+      // }
       &-block {
         margin-right: 12px;
       }
@@ -2436,9 +2454,11 @@ main {
         margin-bottom: 20px;
       }
     }
-    &__slider-block {
-      padding: 0 70px;
-      margin-right: 10px;
+    &__slider{
+      &-block {
+        padding: 0 70px;
+        margin-right: 10px;
+      }
     }
   }
   .footer {

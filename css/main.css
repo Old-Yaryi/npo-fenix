@@ -1932,6 +1932,30 @@ main {
   background-image: url(../img/header_slider_arrow-right_min.svg);
 }
 
+.blog {
+  background-color: #F9F9F9;
+  padding: 83px 0 100px;
+}
+
+.blog__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog__inner {
+  width: 370px;
+}
+
+.blog__inner.list-article {
+  width: 350px;
+}
+
 @media (max-width: 1500px) {
   .accent__background_left::before {
     width: 6%;

@@ -1465,6 +1465,12 @@ main {
 .blog {
   background-color: $bg_accent;
   padding: 83px 0 100px;
+  & h1 {
+    margin-bottom: 10px;
+  }
+  & h3 {
+    margin-bottom: 50px;
+  }
   &__item {
     display: flex;
     column-gap: 30px;
@@ -1472,10 +1478,125 @@ main {
   }
   &__inner {
     width: 370px;
+    background-color: #fff;
     &.list-article {
       width: 350px;
+      background-color: $bg_accent;
     }
   }
+  &__desription {
+    padding-left: 50px;
+    padding-right: 50px;
+    & .blog__title {
+      margin-bottom: 41px;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        background-color: $second-color;
+        height: 1px;
+        width: 55px;
+        left: 0;
+        bottom: -20px;
+      }
+    }
+  }
+  &__img {
+    margin-bottom: 40px;
+  }
+  &__title {
+    &-title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      margin-bottom: 10px;
+      color: $primary-color;
+    }
+  }
+  &__dashboard {
+    display: flex;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    opacity: 0.4;
+    &-time {
+      margin-left: 22px;
+      margin-right: 52px;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 12px;
+        height: 12px;
+        left: -22px;
+        top: 2.5px;
+        background: url(../img/blog_calendar.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    &-view {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 12px;
+        height: 12px;
+        left: -22px;
+        top: 2px;
+        background: url(../img/blog_view.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  &__article {
+    & p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 150%;
+      margin-bottom: 20px;
+    }
+  }
+  &__btn-link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: $second-color;
+    position: relative;
+    &::before {
+      position: absolute;
+      right: -22px;
+      top: 2px;
+      content: "";
+      width: 12px;
+      height: 12px;
+      background-image: url(../img/blog_arrow.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  &__link {
+    &-article {
+      position: relative;
+      & .blog__title {
+        margin-bottom: 65px;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: $second-color;
+        bottom: -32px;
+
+      }
+      &:last-child::before {
+        display: none;
+      }
+    }
+  }
+
 }
 
 // **********ADAPTIVE**********\\

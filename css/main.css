@@ -1937,6 +1937,14 @@ main {
   padding: 83px 0 100px;
 }
 
+.blog h1 {
+  margin-bottom: 10px;
+}
+
+.blog h3 {
+  margin-bottom: 50px;
+}
+
 .blog__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1950,10 +1958,136 @@ main {
 
 .blog__inner {
   width: 370px;
+  background-color: #fff;
 }
 
 .blog__inner.list-article {
   width: 350px;
+  background-color: #F9F9F9;
+}
+
+.blog__desription {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.blog__desription .blog__title {
+  margin-bottom: 41px;
+  position: relative;
+}
+
+.blog__desription .blog__title::before {
+  position: absolute;
+  content: "";
+  background-color: #BF9D77;
+  height: 1px;
+  width: 55px;
+  left: 0;
+  bottom: -20px;
+}
+
+.blog__img {
+  margin-bottom: 40px;
+}
+
+.blog__title-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 10px;
+  color: #2B323C;
+}
+
+.blog__dashboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  opacity: 0.4;
+}
+
+.blog__dashboard-time {
+  margin-left: 22px;
+  margin-right: 52px;
+  position: relative;
+}
+
+.blog__dashboard-time::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  left: -22px;
+  top: 2.5px;
+  background: url(../img/blog_calendar.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blog__dashboard-view {
+  position: relative;
+}
+
+.blog__dashboard-view::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  left: -22px;
+  top: 2px;
+  background: url(../img/blog_view.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blog__article p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+
+.blog__btn-link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #BF9D77;
+  position: relative;
+}
+
+.blog__btn-link::before {
+  position: absolute;
+  right: -22px;
+  top: 2px;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url(../img/blog_arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blog__link-article {
+  position: relative;
+}
+
+.blog__link-article .blog__title {
+  margin-bottom: 65px;
+}
+
+.blog__link-article::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #BF9D77;
+  bottom: -32px;
+}
+
+.blog__link-article:last-child::before {
+  display: none;
 }
 
 @media (max-width: 1500px) {

@@ -61,6 +61,7 @@ $('.laboratory__slider').slick({
 $('.partners__slider').slick({
   slidesToShow: 3,
   speed: 500,
+  slidesPerRow: 3,
   responsive: [
     {
       breakpoint: 900,
@@ -71,9 +72,13 @@ $('.partners__slider').slick({
     {
       breakpoint: 680,
       settings: {
-        slidesToShow: 1
+        slidesToShow: 1,
+        slidesPerRow: 1
         // speed: 3000
-      }    
+        // initialSlide: 6,
+        // infinite: false
+      }
+         
     }
   ]
 

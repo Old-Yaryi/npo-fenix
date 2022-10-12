@@ -570,7 +570,6 @@ main {
     }
   }  
 }
-
 .footer {
   position: relative;
   background-color: $primary-color;
@@ -722,12 +721,12 @@ main {
       margin-bottom: 68px;
     }
     &-tel {
-      color: #fff;
+      color: $accent-color;
       font-weight: 900;
       font-size: 35px;
       line-height: 130%;
       &:hover {
-        color: $accent-color;
+        color: #fff;
       }
     }
     &-mail {
@@ -1417,16 +1416,22 @@ main {
       // width: 236px;
     }
     &-block {
-      // width: 236px;
       height: 100px;
       border: 1px solid rgba(43, 50, 60, 0.2);
       display: flex;
       justify-content: center;
       align-items: center;
       margin-right: 30px;
+      width: 236px;
     }
     & .slick-track {
       display: flex;
+      // column-gap: 30px;
+    }
+    & .slick-slide div {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
     }
     & .slick-arrow {
       position: absolute;
@@ -1732,7 +1737,10 @@ main {
   }
   .partners {
     &__slider {
-      width: calc(70vw - 200px);
+      width: 70vw;
+      // & .slick-slide div {
+      //   column-gap: 30px;
+      // }
     }
   }
   .footer {
@@ -1787,7 +1795,7 @@ main {
       width: 50vw;
     }
     &__slider {
-      width: 60vw;
+      width: 80vw;
     }
 
   }
@@ -2158,6 +2166,11 @@ main {
       column-gap: 30px;
     }
   }
+  .partners {
+    &__slider {
+      width: 70vw;
+    }
+  }
   .footer {
     &__menu {
       display: none;
@@ -2314,7 +2327,8 @@ main {
       }
     }
     &__slider {
-      width: 300vw;
+      width: 80vw;
+      
       & .slick-arrow {
         bottom: -90px;
       }
@@ -2323,7 +2337,13 @@ main {
         // width: 300vw;
       }
       &-item {
-        width: 300%;
+        width: 280px;
+
+        &.slider-680 {
+        visibility: hidden;
+        height: 0;
+        font-size: 0;
+        }
       }
       &-block {
         padding: 0 20vw;
@@ -2452,6 +2472,11 @@ main {
         display: none;
       }
       
+    }
+  }
+  .partners {
+    &__slider {
+      width: 90vw;
     }
   }
   .blog {
@@ -2683,9 +2708,11 @@ main {
       }
     }
     &__slider{
+      width: 95vw;
       &-block {
         padding: 0 70px;
         margin-right: 10px;
+        width: 200px;
       }
     }
   }

@@ -970,14 +970,14 @@ main {
 }
 
 .footer__info-tel {
-  color: #fff;
+  color: #983031;
   font-weight: 900;
   font-size: 35px;
   line-height: 130%;
 }
 
 .footer__info-tel:hover {
-  color: #983031;
+  color: #fff;
 }
 
 .footer__info-mail {
@@ -1887,12 +1887,24 @@ main {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 30px;
+  width: 236px;
 }
 
 .partners__slider .slick-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.partners__slider .slick-slide div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 30px;
 }
 
 .partners__slider .slick-arrow {
@@ -2211,7 +2223,7 @@ main {
     width: 140px;
   }
   .partners__slider {
-    width: calc(70vw - 200px);
+    width: 70vw;
   }
   .footer__menu {
     width: 98%;
@@ -2263,7 +2275,7 @@ main {
     width: 50vw;
   }
   .partners__slider {
-    width: 60vw;
+    width: 80vw;
   }
   .blog__btn {
     margin-bottom: 40px;
@@ -2642,6 +2654,9 @@ main {
     -webkit-column-gap: 30px;
             column-gap: 30px;
   }
+  .partners__slider {
+    width: 70vw;
+  }
   .footer__menu {
     display: none;
   }
@@ -2805,7 +2820,7 @@ main {
     margin-bottom: 30px;
   }
   .partners__slider {
-    width: 300vw;
+    width: 80vw;
   }
   .partners__slider .slick-arrow {
     bottom: -90px;
@@ -2817,7 +2832,12 @@ main {
             flex-direction: row;
   }
   .partners__slider-item {
-    width: 300%;
+    width: 280px;
+  }
+  .partners__slider-item.slider-680 {
+    visibility: hidden;
+    height: 0;
+    font-size: 0;
   }
   .partners__slider-block {
     padding: 0 20vw;
@@ -2938,6 +2958,9 @@ main {
   }
   .product-slider__bgr::before {
     display: none;
+  }
+  .partners__slider {
+    width: 90vw;
   }
   .blog h1 {
     font-size: 28px;
@@ -3149,9 +3172,13 @@ main {
     font-size: 16px;
     margin-bottom: 20px;
   }
+  .partners__slider {
+    width: 95vw;
+  }
   .partners__slider-block {
     padding: 0 70px;
     margin-right: 10px;
+    width: 200px;
   }
   .footer__logo-box .logo__title {
     width: 65vw;

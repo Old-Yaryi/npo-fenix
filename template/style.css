@@ -296,7 +296,7 @@ main {
 
 .header__menu-link_language {
   background-color: #BF9D77;
-  padding: 4px 23px 10px 9px;
+  padding: 4px 23px 20px 9px;
   position: relative;
   list-style: none;
   -webkit-transition: background-color 0.3s ease 0s;
@@ -499,13 +499,15 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 18px 0;
 }
 
 .menu__link {
   color: #fff;
   position: relative;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
 }
 
 .menu__link::before {
@@ -517,7 +519,21 @@ main {
   width: 0%;
   -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  bottom: -10px;
+  bottom: 10px;
+}
+.menu__link::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #BF9D77;
+  opacity: 0.2;
+  border-radius: 50%;
+  top: 30px;
+  right: -5vw;
+}
+.menu__link:last-child::after {
+  display: none;
 }
 
 .menu__link:hover::before {
@@ -542,18 +558,6 @@ main {
   color: #BF9D77;
 }
 
-.menu__p::after {
-  position: absolute;
-  content: "";
-  width: 6px;
-  height: 6px;
-  background-color: #BF9D77;
-  opacity: 0.2;
-  border-radius: 50%;
-  top: 11px;
-  right: -5vw;
-}
-
 .menu__txt {
   color: #fff;
   font-weight: 400;
@@ -563,11 +567,9 @@ main {
   -webkit-transition: color 0.3s ease 0s;
   transition: color 0.3s ease 0s;
 }
-
 .menu__txt:hover {
   color: #BF9D77;
 }
-
 .breadcrumbs {
   background-color: #fff;
   margin-top: 25px;
@@ -598,6 +600,11 @@ main {
 
 .breadcrumbs__link {
   position: relative;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #2B323C;
+  opacity: 0.3;
 }
 
 .breadcrumbs__link:nth-last-child(1)::before {
@@ -619,6 +626,7 @@ main {
 .breadcrumbs__link.breadcrumbs__index {
   margin-left: 36px;
   color: #2B323C;
+  opacity: 1;
 }
 
 .footer {
@@ -1544,4 +1552,3 @@ main {
     text-align: center;
   }
 }
-/*# sourceMappingURL=main.css.map */

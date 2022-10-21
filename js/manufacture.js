@@ -28,10 +28,10 @@ const view = document.querySelector('.manufacture__showcase');
 line.addEventListener('click', function(){
   view.classList.add('line-view')
   line.style.backgroundColor = '#BF9D77';
-  block.style.backgroundColor = '#F9F9F9';
+  block.style.backgroundColor = 'rgba(43, 50, 60, 0.1)';
 });
 block.addEventListener('click', function(){
   view.classList.remove('line-view')
-  line.style.backgroundColor = '#F9F9F9';  
+  line.style.backgroundColor = 'rgba(43, 50, 60, 0.1)';  
   block.style.backgroundColor = '#BF9D77';
 });

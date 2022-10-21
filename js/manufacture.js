@@ -21,3 +21,17 @@ mobile_menu.forEach(el => {
 mobile_menu_close.addEventListener('click', function() {
   mobile_menu_open.classList.toggle('mobile-active')
 });
+// *******grid-line-view******
+const line = document.querySelector('.manufacture__panel-switch_line');
+const block = document.querySelector('.manufacture__panel-switch_block');
+const view = document.querySelector('.manufacture__showcase');
+line.addEventListener('click', function(){
+  view.classList.add('line-view')
+  line.style.backgroundColor = '#BF9D77';
+  block.style.backgroundColor = '#F9F9F9';
+});
+block.addEventListener('click', function(){
+  view.classList.remove('line-view')
+  line.style.backgroundColor = '#F9F9F9';  
+  block.style.backgroundColor = '#BF9D77';
+});

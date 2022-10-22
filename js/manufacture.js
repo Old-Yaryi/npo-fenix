@@ -35,3 +35,8 @@ block.addEventListener('click', function(){
   line.style.backgroundColor = 'rgba(43, 50, 60, 0.1)';  
   block.style.backgroundColor = '#BF9D77';
 });
+// *******filter*****
+const filter_data = document.querySelectorAll('.manufacture__categories-link');
+const filter_class = document.querySelectorAll('.manufacture__card');
+
+

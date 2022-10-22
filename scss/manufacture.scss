@@ -369,8 +369,11 @@ main {
     }
     &__categories {
       margin-bottom: 30px;
+      row-gap: 8px;
+      column-gap: 8px;
       &-link {
       font-size: 12px;
+      padding: 8px 16px;
       }
     } 
     &__showcase {

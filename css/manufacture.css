@@ -477,9 +477,13 @@ main {
   }
   .manufacture__categories {
     margin-bottom: 30px;
+    row-gap: 8px;
+    -webkit-column-gap: 8px;
+            column-gap: 8px;
   }
   .manufacture__categories-link {
     font-size: 12px;
+    padding: 8px 16px;
   }
   .manufacture__showcase {
     row-gap: 30px;

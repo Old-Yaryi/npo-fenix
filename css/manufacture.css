@@ -109,6 +109,11 @@ main {
   line-height: 150%;
 }
 
+.manufacture__categories-link.categoria-active {
+  background-color: #BF9D77;
+  color: #fff;
+}
+
 .manufacture__categories-link.all-categories {
   background-color: #BF9D77;
   color: #fff;
@@ -186,6 +191,10 @@ main {
   border-bottom: 1px solid #BF9D77;
 }
 
+.manufacture__card.hide {
+  display: none;
+}
+
 .manufacture__card-photo {
   width: 210px;
   margin-bottom: 10px;
@@ -226,12 +235,6 @@ main {
   color: #983031;
 }
 
-.manufacture__card:hover .manufacture__card-photo img {
-  width: 95%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .manufacture__navigation {
   right: 0;
   display: -webkit-box;
@@ -246,6 +249,10 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.manufacture__navigation.hide {
+  display: none;
 }
 
 .manufacture__navigation-btn {

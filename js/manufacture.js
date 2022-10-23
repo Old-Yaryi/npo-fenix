@@ -38,5 +38,21 @@ block.addEventListener('click', function(){
 // *******filter*****
 const filter_data = document.querySelectorAll('.manufacture__categories-link');
 const filter_class = document.querySelectorAll('.manufacture__card');
-
+const filter_navigation = document.querySelector('.manufacture__navigation')
+filter_data.forEach(element => {
+  addEventListener("click", function(event){
+    let filter_click = event.target.dataset['cat']
+    filter_class.forEach(elem => {
+      elem.classList.remove('hide')
+      filter_navigation.classList.remove('hide')
+      if (!elem.classList.contains(filter_click) && filter_click!=='all') {
+        elem.classList.add('hide') 
+        filter_navigation.classList.add('hide')    
+      } 
+    });
+    element.classList.remove('categoria-active')
+    event.target.classList.add('categoria-active')
+  });
+  
+});
 

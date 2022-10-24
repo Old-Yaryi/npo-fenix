@@ -149,6 +149,10 @@ main {
           justify-content: space-between;
 }
 
+.manufacture__showcase.line-view .manufacture__card.hide {
+  display: none;
+}
+
 .manufacture__showcase.line-view .manufacture__card .manufacture__card-photo {
   display: none;
 }
@@ -270,6 +274,10 @@ main {
           align-items: center;
 }
 
+.manufacture__navigation-btn.prev {
+  cursor: not-allowed;
+}
+
 .manufacture__navigation-btn.next {
   position: relative;
   background-color: rgba(43, 50, 60, 0.1);
@@ -319,6 +327,7 @@ main {
 
 .manufacture__navigation-page:first-child {
   background-color: #BF9D77;
+  cursor: not-allowed;
 }
 
 .manufacture__navigation-page:first-child span {

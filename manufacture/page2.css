@@ -1,0 +1,39 @@
+.manufacture__navigation-btn.prev {
+  background-color: rgba(43, 50, 60, 0.1);
+  position: relative;
+  cursor: pointer;
+}
+.manufacture__navigation-btn.prev:hover {
+  background-color: #BF9D77;
+}
+.manufacture__navigation-btn.prev::after {
+    position: absolute;
+    content: url(../manufacture/img/arrow-left_black.svg);
+    top: 36%;
+    left: 36%;
+}
+.manufacture__navigation-btn.prev:hover:after {
+  content: url(../manufacture/img/arrow-left_white.svg);
+}
+.manufacture__navigation-page {
+  background-color: #BF9D77;
+  color: #fff;
+  cursor: not-allowed;
+}
+.manufacture__navigation-page:first-child {
+  background-color: rgba(43, 50, 60, 0.1);
+  cursor: pointer;
+}
+.manufacture__navigation-page:first-child:hover {
+  background-color: #BF9D77;
+}
+.manufacture__navigation-page:first-child:hover span {
+  color: #fff;
+}
+.manufacture__navigation-btn.next {
+  background-color: #BF9D77;
+  cursor: not-allowed;
+}
+.manufacture__navigation-page:first-child span {
+  color: #2B323C;
+}

@@ -50,8 +50,8 @@ filter_data.forEach(element => {
         filter_navigation.classList.add('hide')    
       } 
     });
-    element.classList.remove('categoria-active')
-    event.target.classList.add('categoria-active')
+    // element.classList.remove('categoria-active')
+    // event.target.classList.add('categoria-active')
   });
   
 });

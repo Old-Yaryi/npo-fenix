@@ -96,6 +96,9 @@ main {
       & .manufacture__card {
         display: flex;
         justify-content: space-between;
+        &.hide {
+          display: none;
+        }
         & .manufacture__card-photo {
           display: none;
         }
@@ -181,6 +184,9 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
+      &.prev {
+        cursor: not-allowed;
+      }
       &.next {
         position: relative;
         background-color: rgba(43, 50, 60, 0.1);
@@ -214,6 +220,7 @@ main {
       color: #2B323C;
       &:first-child {
         background-color: #BF9D77;
+        cursor: not-allowed;
         & span {
           color: #fff;
         }
@@ -353,6 +360,7 @@ main {
       }
       &.line-view {
         & .manufacture__card {
+
           & .manufacture__card-descr {
             margin-bottom: 10px;
           }

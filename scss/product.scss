@@ -1,0 +1,102 @@
+$primary-color: #2B323C;
+$second-color: #BF9D77;
+$accent_bg: linear-gradient(360deg, rgba(152, 48, 49, 0.9) 29.13%, rgba(152, 48, 49, 0.9) 98.03%);
+$accent-color: #983031;
+$bg_accent: #F9F9F9;
+
+main {
+  height: 100vw;
+}
+.breadcrumbs {
+  margin-bottom: 30px;
+  &__link:nth-last-child(2) {
+    opacity: 1;
+  }
+}
+.product {
+  &-card {
+    &__header {
+      margin-bottom: 50px;
+      &_subtitle {
+        color: $second-color;
+        font-size: 24px;
+        font-weight: 900;
+      }
+    }
+    &__item {
+      display: flex;
+      column-gap: 50px;
+    }
+    &__descrition {
+      &_text {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  &__contacts{
+    width: 80%;
+    padding: 30px;
+    border: 4px solid $second-color;
+    &_dept {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    &-box {
+      width: 100%;
+      border-top: 1px solid rgba(191, 157, 119, 0.3);
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      &_rank {
+        font-weight: 700;
+        font-size: 12px;
+        margin-bottom: 4px;
+      }
+      &_unit {
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+      & a {
+        margin-bottom: 10px;
+        position: relative;
+        margin-left: 20px;
+      }
+      &_tel {
+        font-size: 12px;
+        color: $primary-color;
+        &::after {
+          position: absolute;
+          top: 0;
+          left: -20px;
+          height: 12px;
+          width: 12px;
+          content: "";
+          background-image: url(../manufacture/product/img/phone.svg);
+        }
+      }
+      &_mail {
+        font-size: 12px;
+        &::after {
+          position: absolute;
+          top: 0;
+          left: -20px;
+          height: 12px;
+          width: 12px;
+          content: "";
+          background-image: url(../manufacture/product/img/mail.svg);
+        }
+      }
+    }
+  }
+  
+}
+.quote {
+  padding: 30px;
+  border: 4px solid rgba(191, 157, 119, 0.3);
+  font-style: italic;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 40px;
+
+}

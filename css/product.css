@@ -1,1 +1,114 @@
-/* No CSS *//*# sourceMappingURL=product.css.map */
+main {
+  height: 100vw;
+}
+
+.breadcrumbs {
+  margin-bottom: 30px;
+}
+
+.breadcrumbs__link:nth-last-child(2) {
+  opacity: 1;
+}
+
+.product-card__header {
+  margin-bottom: 50px;
+}
+
+.product-card__header_subtitle {
+  color: #BF9D77;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.product-card__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.product-card__descrition_text {
+  margin-bottom: 40px;
+}
+
+.product__contacts {
+  width: 80%;
+  padding: 30px;
+  border: 4px solid #BF9D77;
+}
+
+.product__contacts_dept {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.product__contacts-box {
+  width: 100%;
+  border-top: 1px solid rgba(191, 157, 119, 0.3);
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product__contacts-box_rank {
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.product__contacts-box_unit {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.product__contacts-box a {
+  margin-bottom: 10px;
+  position: relative;
+  margin-left: 20px;
+}
+
+.product__contacts-box_tel {
+  font-size: 12px;
+  color: #2B323C;
+}
+
+.product__contacts-box_tel::after {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  height: 12px;
+  width: 12px;
+  content: "";
+  background-image: url(../manufacture/product/img/phone.svg);
+}
+
+.product__contacts-box_mail {
+  font-size: 12px;
+}
+
+.product__contacts-box_mail::after {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  height: 12px;
+  width: 12px;
+  content: "";
+  background-image: url(../manufacture/product/img/mail.svg);
+}
+
+.quote {
+  padding: 30px;
+  border: 4px solid rgba(191, 157, 119, 0.3);
+  font-style: italic;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 40px;
+}
+/*# sourceMappingURL=product.css.map */

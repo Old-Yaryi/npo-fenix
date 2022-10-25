@@ -27,13 +27,15 @@ const block = document.querySelector('.manufacture__panel-switch_block');
 const view = document.querySelector('.manufacture__showcase');
 line.addEventListener('click', function(){
   view.classList.add('line-view')
-  line.style.backgroundColor = '#BF9D77';
-  block.style.backgroundColor = 'rgba(43, 50, 60, 0.1)';
+  // line.style.backgroundColor = '#BF9D77';
+  // block.style.backgroundColor = 'rgba(43, 50, 60, 0.1)';
+  console.log ('Это линия')
 });
 block.addEventListener('click', function(){
   view.classList.remove('line-view')
-  line.style.backgroundColor = 'rgba(43, 50, 60, 0.1)';  
-  block.style.backgroundColor = '#BF9D77';
+  // line.style.backgroundColor = 'rgba(43, 50, 60, 0.1)';  
+  // block.style.backgroundColor = '#BF9D77';
+  console.log ('Это блок')
 });
 // *******filter*****
 const filter_data = document.querySelectorAll('.manufacture__categories-link');
@@ -45,7 +47,7 @@ filter_data.forEach(element => {
     filter_class.forEach(elem => {
       elem.classList.remove('hide')
       filter_navigation.classList.remove('hide')
-      if (!elem.classList.contains(filter_click) && filter_click!=='all') {
+      if (!elem.classList.contains(filter_click)  && filter_click!=='all') {
         elem.classList.add('hide') 
         filter_navigation.classList.add('hide')    
       } 

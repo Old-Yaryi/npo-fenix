@@ -1,5 +1,5 @@
 main {
-  height: 100vw;
+  height: 100%;
 }
 
 .breadcrumbs {
@@ -8,6 +8,10 @@ main {
 
 .breadcrumbs__link:nth-last-child(2) {
   opacity: 1;
+}
+
+.product-card {
+  margin-bottom: 50px;
 }
 
 .product-card__header {
@@ -101,6 +105,14 @@ main {
   width: 12px;
   content: "";
   background-image: url(../manufacture/product/img/mail.svg);
+}
+
+.product-gallery {
+  margin-bottom: 20px;
+}
+
+.product-gallery img {
+  width: 100%;
 }
 
 .quote {

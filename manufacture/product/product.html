@@ -12,6 +12,7 @@
   <link href="../../css/normalize.css" rel="stylesheet">
   <link href="../../css/reset.css" rel="stylesheet">
   <link href="../../template/style.css" rel="stylesheet">
+  <link href="../../css/jquery.fancybox.min.css" rel="stylesheet">
   <link href="../../css/product.css" rel="stylesheet">
   
 </head>
@@ -304,6 +305,18 @@
         </section>
       </div>
     </div>
+    <section class="product-gallery">
+      <div class="container">
+        <div class="product-gallery__img" >
+          <!-- <img src="./img/table_1.webp"  alt=""> -->
+          <img src="./img/table_1.webp" data-fancybox="gallery_1" alt="">
+        </div>
+        <div class="product-gallery__img" >
+          <!-- <img src="./img/table_2.webp" alt=""> -->
+          <img src="./img/table_2.webp" data-fancybox="gallery_1" alt="">
+        </div>
+      </div>
+    </section>
 
 
 
@@ -386,7 +399,8 @@
       </div>    
     </div>
   </footer> 
-
+    <script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/jquery.fancybox.min.js"></script>
     <script src="../../js/product.js"></script>
 </body>
 </html>

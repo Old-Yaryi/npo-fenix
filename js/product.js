@@ -21,3 +21,11 @@ mobile_menu.forEach(el => {
 mobile_menu_close.addEventListener('click', function() {
   mobile_menu_open.classList.toggle('mobile-active')
 });
+// *********Галерея**********
+$('[data-fancybox="gallery_1"]').fancybox({
+  // infobar: true,
+  // toolbar: "smallBtn",
+	arrows: true,
+  // modal: true,
+  
+});

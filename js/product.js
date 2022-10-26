@@ -22,10 +22,38 @@ mobile_menu_close.addEventListener('click', function() {
   mobile_menu_open.classList.toggle('mobile-active')
 });
 // *********Галерея**********
-$('[data-fancybox="gallery_1"]').fancybox({
-  // infobar: true,
-  // toolbar: "smallBtn",
+$('.product-gallery__img').fancybox({
+
+  infobar: false,
+  toolbar: "smallBtn",
 	arrows: true,
-  // modal: true,
-  
 });
+
+// ********product slider********
+$(document).ready(function() {
+  var $slider = $('.product-slider');
+  var $progressBar = $('.progress');
+  var $progressBarLabel = $( '.slider__label' );
+  
+  $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
+    var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
+    
+    $progressBar
+      .css('background-size', calc + '% 100%')
+      .attr('aria-valuenow', calc );
+    
+    $progressBarLabel.text( calc + '% completed' );
+  });
+  
+  $slider.slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    appendArrows:'.product-slider__nav',
+    speed: 400
+  });  
+});
+// $('.product-slider').slick({
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   appendArrows:'.product-slider__nav'
+// });

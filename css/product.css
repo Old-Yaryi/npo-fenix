@@ -108,11 +108,90 @@ main {
 }
 
 .product-gallery {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
-.product-gallery img {
+.product-gallery__item {
+  margin-bottom: 20px;
+  border: 1px solid rgba(191, 157, 119, 0.3);
+  padding: 10px;
+}
+
+.product-gallery__img {
+  margin-bottom: 50px;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.product-gallery__img img {
   width: 100%;
+}
+
+.product-slider {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.product-slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.product-slider__nav {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.product-slider__nav .slick-arrow {
+  position: relative;
+  font-size: 0;
+  border: none;
+  background-color: #BF9D77;
+  height: 40px;
+  width: 40px;
+}
+
+.product-slider__nav .slick-arrow:hover {
+  background-color: rgba(43, 50, 60, 0.2);
+}
+
+.product-slider__nav .slick-prev {
+  position: absolute;
+  top: -16px;
+  left: 30px;
+  cursor: pointer;
+}
+
+.product-slider__nav .slick-prev::after {
+  content: url(../manufacture/product/img/arrow-left_white.svg);
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.product-slider__nav .slick-prev:hover::after {
+  content: url(../manufacture/product/img/arrow-left_black.svg);
+}
+
+.product-slider__nav .slick-next {
+  position: absolute;
+  top: -16px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.product-slider__nav .slick-next::after {
+  content: url(../manufacture/product/img/arrow-right_white.svg);
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.product-slider__nav .slick-next:hover::after {
+  content: url(../manufacture/product/img/arrow-rifht_black.svg);
 }
 
 .quote {
@@ -122,5 +201,37 @@ main {
   font-size: 16px;
   line-height: 150%;
   margin-bottom: 40px;
+}
+
+.slider-product {
+  padding: 100px 0;
+  background-color: #F9F9F9;
+}
+
+.progress {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 3px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgba(43, 50, 60, 0.2);
+  background-image: -webkit-gradient(linear, left top, right top, from(#BF9D77), to(#BF9D77));
+  background-image: linear-gradient(to right, #BF9D77, #BF9D77);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size .4s ease-in-out;
+  transition: background-size .4s ease-in-out;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 /*# sourceMappingURL=product.css.map */

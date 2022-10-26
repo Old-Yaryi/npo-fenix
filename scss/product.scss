@@ -91,9 +91,71 @@ main {
     }
   }
   &-gallery {
-    margin-bottom: 20px;
-    & img {
-      width: 100%;
+    margin-bottom: 40px;
+    &__item {
+      margin-bottom: 20px;
+      border: 1px solid rgba(191, 157, 119, 0.3);
+      padding: 10px;
+    }
+    &__img {
+      margin-bottom: 50px;
+      cursor: zoom-in;
+      & img {
+        width: 100%;
+      }
+    } 
+  }
+  &-slider {
+    margin-bottom: 30px;
+    overflow: hidden;
+    & .slick-track {
+      display: flex;
+      column-gap: 30px;
+    }
+    &__nav {
+      margin-bottom: 100px;
+      position: relative;
+      & .slick-arrow {
+        position: relative;
+        font-size: 0;
+        border: none;
+        background-color: $second-color;
+        height: 40px;
+        width: 40px;
+        &:hover {
+          background-color: rgba(43, 50, 60, 0.2);
+        }
+      }
+      & .slick-prev {
+        position: absolute;
+        top: -16px;
+        left: 30px;
+        cursor: pointer;
+        &::after {
+          content: url(../manufacture/product/img/arrow-left_white.svg);
+          position: absolute;
+          top: 12px;
+          left: 12px;
+        }
+        &:hover::after {
+          content: url(../manufacture/product/img/arrow-left_black.svg);
+        }
+      }
+      & .slick-next {
+        position: absolute;
+        top: -16px;
+        right: 30px;
+        cursor: pointer;
+        &::after {
+          content: url(../manufacture/product/img/arrow-right_white.svg);
+          position: absolute;
+          top: 12px;
+          right: 12px;
+        }
+        &:hover::after {
+          content: url(../manufacture/product/img/arrow-rifht_black.svg);
+        }
+      }
     }
   }
   
@@ -106,4 +168,33 @@ main {
   line-height: 150%;
   margin-bottom: 40px;
 
+}
+.slider-product {
+  padding: 100px 0;
+  background-color: $bg_accent;
+}
+.progress {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 3px;
+  border-radius: 10px;
+  overflow: hidden;
+  
+  background-color: rgba(43, 50, 60, 0.2);
+  background-image: linear-gradient(to right, $second-color, $second-color);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  
+  transition: background-size .4s ease-in-out;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
 }

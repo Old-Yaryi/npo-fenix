@@ -29,14 +29,19 @@ $('.product-gallery__img').fancybox({
 	arrows: true,
 });
 
+
+
+
+
+
 // ********product slider********
 $(document).ready(function() {
-  var $slider = $('.product-slider');
-  var $progressBar = $('.progress');
-  var $progressBarLabel = $( '.slider__label' );
+  let $slider = $('.product-slider');
+  let $progressBar = $('.progress');
+  let $progressBarLabel = $( '.slider__label' );
   
   $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
-    var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
+    let calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
     
     $progressBar
       .css('background-size', calc + '% 100%')
@@ -45,6 +50,7 @@ $(document).ready(function() {
     $progressBarLabel.text( calc + '% completed' );
   });
   
+
   $slider.slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -52,7 +58,13 @@ $(document).ready(function() {
     speed: 400
   });  
 });
-// $('.product-slider').slick({
+
+// *********slider-other********
+$('.slider-other').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1
+});
 //   slidesToShow: 3,
 //   slidesToScroll: 1,
 //   appendArrows:'.product-slider__nav'

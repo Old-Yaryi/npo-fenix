@@ -157,6 +157,9 @@ main {
       }
     }
   }
+  &-other {
+    margin-bottom: 100px;
+  }
   
   
 }
@@ -173,6 +176,7 @@ main {
   padding: 100px 0;
   background-color: $bg_accent;
   position: relative;
+  margin-bottom: 100px;
   &::before {
     content: "";
     position: absolute;
@@ -185,36 +189,41 @@ main {
 }
 .slider-other {
   overflow: hidden;
-  margin: 0 50px;
+  & h1 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
   & .slick-track {
     display: flex;
     column-gap: 30px;
   }
   &__item {
     position: relative;
+    margin-bottom: 30px;
   }
   &__inner {
     &::after {
       position: absolute;
       content: "";
       width: 100%;
-      height: 99%;
+      height: 100%;
       top: 0;
       background-color:  rgba(43, 50, 60, 0.3) ;
       transition: background-color, 0.3s ease 0s;
     }
     &:hover::after {
-      background-color: rgba(152, 48, 49, 0.9); 
+      background-color: rgba(152, 48, 49, 0.8); 
     }
   }
   &__photo {
     & img {
       width: 100%;
+      display: block;
     }
   }
   &__info {
     position: absolute;
-    padding: 100px 30px 50px;
+    padding: 30px;
     z-index: 2;
     content: "";
     top: 0;

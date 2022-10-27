@@ -193,6 +193,10 @@ main {
   content: url(../manufacture/product/img/arrow-rifht_black.svg);
 }
 
+.product-other {
+  margin-bottom: 100px;
+}
+
 .quote {
   padding: 30px;
   border: 4px solid rgba(191, 157, 119, 0.3);
@@ -206,6 +210,7 @@ main {
   padding: 100px 0;
   background-color: #F9F9F9;
   position: relative;
+  margin-bottom: 100px;
 }
 
 .slider-product::before {
@@ -220,7 +225,11 @@ main {
 
 .slider-other {
   overflow: hidden;
-  margin: 0 50px;
+}
+
+.slider-other h1 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .slider-other .slick-track {
@@ -233,13 +242,14 @@ main {
 
 .slider-other__item {
   position: relative;
+  margin-bottom: 30px;
 }
 
 .slider-other__inner::after {
   position: absolute;
   content: "";
   width: 100%;
-  height: 99%;
+  height: 100%;
   top: 0;
   background-color: rgba(43, 50, 60, 0.3);
   -webkit-transition: background-color, 0.3s ease 0s;
@@ -247,16 +257,17 @@ main {
 }
 
 .slider-other__inner:hover::after {
-  background-color: rgba(152, 48, 49, 0.9);
+  background-color: rgba(152, 48, 49, 0.8);
 }
 
 .slider-other__photo img {
   width: 100%;
+  display: block;
 }
 
 .slider-other__info {
   position: absolute;
-  padding: 100px 30px 50px;
+  padding: 30px;
   z-index: 2;
   content: "";
   top: 0;

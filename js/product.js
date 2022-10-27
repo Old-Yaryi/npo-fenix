@@ -62,7 +62,9 @@ $(document).ready(function() {
 // *********slider-other********
 $('.slider-other').slick({
   infinite: true,
-  slidesToShow: 3,
+  slidesToShow: 4,
+  slidesPerRow: 1,
+  rows: 2,
   slidesToScroll: 1
 });
 //   slidesToShow: 3,

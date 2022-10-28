@@ -23,23 +23,15 @@ mobile_menu_close.addEventListener('click', function() {
 });
 // *********Галерея**********
 $('.product-gallery__img').fancybox({
-
   infobar: false,
   toolbar: "smallBtn",
 	arrows: true,
 });
-
-
-
-
-
-
 // ********product slider********
 $(document).ready(function() {
   let $slider = $('.product-slider');
   let $progressBar = $('.progress');
   let $progressBarLabel = $( '.slider__label' );
-  
   $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
     let calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
     
@@ -49,8 +41,6 @@ $(document).ready(function() {
     
     $progressBarLabel.text( calc + '% completed' );
   });
-  
-
   $slider.slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -58,16 +48,26 @@ $(document).ready(function() {
     speed: 400
   });  
 });
-
 // *********slider-other********
-$('.slider-other').slick({
-  infinite: true,
-  slidesToShow: 4,
-  slidesPerRow: 1,
-  rows: 2,
-  slidesToScroll: 1
+$(document).ready(function() {
+  let $slider = $('.slider-other');
+  let $progressBar = $('.progress');
+  let $progressBarLabel = $( '.slider__label' );
+  $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
+    let calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;   
+    $progressBar
+      .css('background-size', calc + '% 100%')
+      .attr('aria-valuenow', calc );
+    
+    $progressBarLabel.text( calc + '% completed' );
+  });
+  $slider.slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    slidesPerRow: 1,
+    rows: 2,
+    appendArrows:'.slider-other__nav',
+    speed: 400
+  });  
 });
-//   slidesToShow: 3,
-//   slidesToScroll: 1,
-//   appendArrows:'.product-slider__nav'
-// });
+

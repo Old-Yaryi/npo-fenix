@@ -197,6 +197,11 @@ main {
   margin-bottom: 100px;
 }
 
+.product-other h1 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
 .quote {
   padding: 30px;
   border: 4px solid rgba(191, 157, 119, 0.3);
@@ -207,7 +212,7 @@ main {
 }
 
 .slider-product {
-  padding: 100px 0;
+  padding: 70px 0 100px;
   background-color: #F9F9F9;
   position: relative;
   margin-bottom: 100px;
@@ -223,13 +228,12 @@ main {
   top: 0;
 }
 
-.slider-other {
-  overflow: hidden;
+.slider-product h1 {
+  margin-bottom: 30px;
 }
 
-.slider-other h1 {
-  text-transform: uppercase;
-  margin-bottom: 30px;
+.slider-other {
+  overflow: hidden;
 }
 
 .slider-other .slick-track {
@@ -302,6 +306,59 @@ main {
   line-height: 1.5;
   margin-top: 20px;
   min-height: 48px;
+}
+
+.slider-other__nav {
+  position: relative;
+}
+
+.slider-other__nav .slick-arrow {
+  position: relative;
+  font-size: 0;
+  border: none;
+  background-color: #BF9D77;
+  height: 40px;
+  width: 40px;
+}
+
+.slider-other__nav .slick-arrow:hover {
+  background-color: rgba(43, 50, 60, 0.2);
+}
+
+.slider-other__nav .slick-prev {
+  position: absolute;
+  top: -16px;
+  left: 30px;
+  cursor: pointer;
+}
+
+.slider-other__nav .slick-prev::after {
+  content: url(../manufacture/product/img/arrow-left_white.svg);
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.slider-other__nav .slick-prev:hover::after {
+  content: url(../manufacture/product/img/arrow-left_black.svg);
+}
+
+.slider-other__nav .slick-next {
+  position: absolute;
+  top: -16px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.slider-other__nav .slick-next::after {
+  content: url(../manufacture/product/img/arrow-right_white.svg);
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.slider-other__nav .slick-next:hover::after {
+  content: url(../manufacture/product/img/arrow-rifht_black.svg);
 }
 
 .progress {

@@ -159,6 +159,10 @@ main {
   }
   &-other {
     margin-bottom: 100px;
+    & h1 {
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
   }
   
   
@@ -173,7 +177,7 @@ main {
 
 }
 .slider-product {
-  padding: 100px 0;
+  padding: 70px 0 100px;
   background-color: $bg_accent;
   position: relative;
   margin-bottom: 100px;
@@ -186,13 +190,12 @@ main {
     background-color: #fff;
     top: 0;
   }
+  & h1 {
+    margin-bottom: 30px;
+  }
 }
 .slider-other {
   overflow: hidden;
-  & h1 {
-    text-transform: uppercase;
-    margin-bottom: 30px;
-  }
   & .slick-track {
     display: flex;
     column-gap: 30px;
@@ -255,6 +258,51 @@ main {
     line-height: 1.5;
     margin-top: 20px;
     min-height: 48px;
+  }
+  &__nav {
+    position: relative;
+    & .slick-arrow {
+        position: relative;
+        font-size: 0;
+        border: none;
+        background-color: $second-color;
+        height: 40px;
+        width: 40px;
+        &:hover {
+          background-color: rgba(43, 50, 60, 0.2);
+        }
+    }
+    & .slick-prev {
+        position: absolute;
+        top: -16px;
+        left: 30px;
+        cursor: pointer;
+        &::after {
+          content: url(../manufacture/product/img/arrow-left_white.svg);
+          position: absolute;
+          top: 12px;
+          left: 12px;
+        }
+        &:hover::after {
+          content: url(../manufacture/product/img/arrow-left_black.svg);
+        }
+    }
+    & .slick-next {
+        position: absolute;
+        top: -16px;
+        right: 30px;
+        cursor: pointer;
+        &::after {
+          content: url(../manufacture/product/img/arrow-right_white.svg);
+          position: absolute;
+          top: 12px;
+          right: 12px;
+        }
+        &:hover::after {
+          content: url(../manufacture/product/img/arrow-rifht_black.svg);
+        }
+    }
+    
   }
 }
 .progress {

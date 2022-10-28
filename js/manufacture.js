@@ -30,34 +30,55 @@ line.addEventListener('click', function(){
   view.classList.add('line-view')
   line.style.backgroundColor = '#BF9D77';
   block.style.backgroundColor = 'rgba(43, 50, 60, 0.1)';
-  console.log ('Это линия')
 });
 block.addEventListener('click', function(){
   view.classList.remove('line-view')
   line.style.backgroundColor = 'rgba(43, 50, 60, 0.1)';  
   block.style.backgroundColor = '#BF9D77';
-  console.log ('Это блок')
 });
 
 // *******filter*****
 const filter_data = document.querySelectorAll('.manufacture__categories-link');
-const filter_class = document.querySelectorAll('.manufacture__card');
-const filter_navigation = document.querySelector('.manufacture__navigation')
+// const filter_class = document.querySelectorAll('.manufacture__card');
+// const filter_navigation = document.querySelector('.manufacture__navigation')
 filter_data.forEach(element => {
   addEventListener("click", function(event){
-    let filter_click = event.target.dataset['cat']
-    filter_class.forEach(elem => {
-      elem.classList.remove('hide')
-      filter_navigation.classList.remove('hide')
-      if (!elem.classList.contains(filter_click)  && filter_click!=='all') {
-        elem.classList.add('hide') 
-        filter_navigation.classList.add('hide')    
-      } 
-    });
+//     let filter_click = event.target.dataset['cat']
+//     // filter_navigation.classList.remove('hide')
+//     filter_class.forEach(elem => {
+//       elem.classList.remove('hide')
+//       if (!elem.classList.contains(filter_click)  && filter_click!=='all') {
+//         elem.classList.add('hide') 
+//         filter_navigation.classList.add('hide')    
+//       } 
+//     });
     element.classList.remove('categoria-active')
     event.target.classList.add('categoria-active')
   });
   
+});
+
+
+
+
+$(function() {
+  let filter = $("[data-cat]");
+  filter.on("click", function() {
+    let category = $(this).data('cat');
+    if(category == 'all') {
+      $("[data-card]").removeClass('hide')
+    } else {
+      $("[data-card]").each(function(){
+        let card = $(this).data('card')
+        if(card != category) {
+          $(this).addClass('hide')
+          $(category).addClass('categoria-active')
+        } else {
+          $(this).removeClass('hide')
+        }
+        })
+      }
+    });
 });
 
 

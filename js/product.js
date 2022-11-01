@@ -45,7 +45,24 @@ $(document).ready(function() {
     slidesToShow: 3,
     slidesToScroll: 1,
     appendArrows:'.product-slider__nav',
-    speed: 400
+    speed: 400,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          // arrows: false,
+          // centerMode: true,
+          // centerPadding: '40px',
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   });  
 });
 // *********slider-other********
@@ -67,7 +84,30 @@ $(document).ready(function() {
     slidesPerRow: 1,
     rows: 2,
     appendArrows:'.slider-other__nav',
-    speed: 400
+    speed: 400,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesPerRow: 1,
+          rows: 1
+        }
+      }
+    ]
+
   });  
 });
 

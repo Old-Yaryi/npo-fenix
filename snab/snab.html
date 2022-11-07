@@ -12,8 +12,7 @@
   <link href="../css/normalize.css" rel="stylesheet">
   <link href="../css/reset.css" rel="stylesheet">
   <link href="../template/style.css" rel="stylesheet">
-  <link href="../css/manufacture.css" rel="stylesheet">
-  <link href="./page2.css" rel="stylesheet">
+  <link href="../css/snab.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">    
@@ -170,9 +169,9 @@
       <div class="header__menu-nav">
         <div class="container">       
           <nav class="menu">
-            <div class="menu__link active-link" href="#">
-              <a class="menu__p" href="#">Производство</a>
-              <a class="menu__txt" href="#">продукция</a>
+            <div class="menu__link" >
+              <a class="menu__p" href="../manufacture/manufacture.html">Производство</a>
+              <a class="menu__txt" href="../manufacture/manufacture.html">продукция</a>
             </div>
             <div class="menu__link" >
               <a class="menu__p" href="../snab/snab.html">Купим</a>
@@ -260,148 +259,86 @@
       </div>
     </div>
   </header>
-  <main>
-    <div class="breadcrumbs">
-      <div class="container">
-        <div class="breadcrumbs__item">
-          <a class="breadcrumbs__link breadcrumbs__index" href="../index.html">Главная</a>
-          <a class="breadcrumbs__link" href="manufacture.html">Производство</a>
-        </div>
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="breadcrumbs__item">
+        <a class="breadcrumbs__link breadcrumbs__index" href="index.html">Главная</a>
+        <a class="breadcrumbs__link" href="../manufacture/manufacture.html">Переработка отходов цветных металлов</a>
       </div>
     </div>
-    <div class="manufacture">
+  </div> 
+  <main> 
+    <section class="supply">
       <div class="container">
-        <div class="manufacture__panel">
-          <div class="manufacture__panel-title">
-            <h1>Производство</h1>
+        <div class="supply__title">
+          <h1>Отдел снабжения</h1>
+          <h3>Переработка отходов цветных металлов</h3>
+        </div>
+        <div class="supply-descripton">
+          <div class="supply-descripton__item">
+            <p>Закупаем лома и отходы цветных металлов и сплавов для металлургического производства:</p>
+            <div class="supply-descripton__inner">
+              <ul class="supply-product">
+                <li>ИЗГАРЬ</li>
+                <li>ШЛАК</li>
+                <li>ШЛАМ</li>
+                <li>ГАРТЦИНК</li>
+                <li>ДРОСС</li>
+                <li>СТРУЖКИ</li>
+                <li>ПЫЛИ</li>
+                <li>ОКСИДЫ</li>
+                <li>ДРУГИЕ ФОРМЫ</li>
+              </ul>
+            </div>
+            <div class="supply__warning">
+              <p class="supply__warning-text">Мы работаем только с индивидуальными предпринимателями и юридическими лицами. Безналичные расчеты.</p>
+            </div>
           </div>
-          <div class="manufacture__panel-switch">
-            <div class="manufacture__panel-switch_txt">
-              <span>Вид каталога</span>
+          <div class="supply-descripton__item">
+            <div class="supply-license">
+              <a class="supply-license-img" data-fancybox="gallery_2" href="../img/license_1.jpg">
+                <img src="../img/license_1.jpg"  alt="license">
+              </a>
             </div>
-            <div class="manufacture__panel-switch_block"> 
-              <img src="./img/grid.svg" alt="grid">
-            </div>
-            <div class="manufacture__panel-switch_line">              
-                <img src="./img/row.svg" alt="row">              
-            </div>
-          </div>
-        </div>
-        <div class="manufacture-description">
-          <p>Для некоторых заводов самостоятельное обеспечение затруднительно. Не всякий завод имеет возможность содержать многочисленные филиалы, сотрудников, в задачи которых входит поиск металлолома. Напротив, организации, занимающиеся сбором и приемом металлолома, без труда находят источники данного сырья, ведь от этого напрямую зависит их доход. </p>
-        </div>
-        <div class="manufacture__categories">
-          <a class="manufacture__categories-link all-categories categoria-active" data-cat="all">Вся продукция</a>
-          <a class="manufacture__categories-link" data-cat="vismut">Висмут</a>
-          <a class="manufacture__categories-link" data-cat="cuprum">Медь</a>
-          <a class="manufacture__categories-link" data-cat="svin">Свинец</a>
-          <a class="manufacture__categories-link" data-cat="bronza">Бронза</a>
-          <a class="manufacture__categories-link" data-cat="latun">Латунь</a>
-          <a class="manufacture__categories-link" data-cat="pripoi">Припои</a>
-          <a class="manufacture__categories-link" data-cat="zink">Цинк</a>
-          <a class="manufacture__categories-link" data-cat="olovo">Олово</a>
-          <a class="manufacture__categories-link" data-cat="babit">Баббиты</a>
-          <a class="manufacture__categories-link" data-cat="indiy">Индий</a>
-          <a class="manufacture__categories-link" data-cat="surma">Сурьма</a>
-          <a class="manufacture__categories-link" data-cat="vuda">Сплавы Вуда, Розе</a>
-        </div>
-        <div class="manufacture__showcase">
-          <a class="manufacture__card zink" data-card="zink" href="#">
-            <div class="manufacture__card-photo">
-              <img src="./img/zink_belila.webp" alt="possu_40-2">
-            </div>
-            <div class="manufacture__card-descr">фасовка по 20, 25 кг</div>
-            <div class="manufacture__card-title">Цинковые белила БЦОМ, БЦВ-1, БЦВ-2</div>
-            <div class="manufacture__card-detailed">Подробнее</div>
-          </a>
-          <a class="manufacture__card svin" data-card="svin" href="#">
-            <div class="manufacture__card-photo">
-              <img src="./img/svin.webp" alt="">
-            </div>
-            <div class="manufacture__card-descr">чушка, блок</div>
-            <div class="manufacture__card-title">Свинец С0, С1, С2, С3, ССУ, ССУА и другие</div>
-            <div class="manufacture__card-detailed">Подробнее</div>
-          </a>
-          <a class="manufacture__card babit" data-card="babit" href="#">
-            <div class="manufacture__card-photo">
-              <img src="./img/babit.webp" alt="pripoi_sac_07">
-            </div>
-            <div class="manufacture__card-descr">чушка, пруток, проволока, слиток</div>
-            <div class="manufacture__card-title">Баббиты Б16, Б83, Б83С, Б88 и другие</div>
-            <div class="manufacture__card-detailed">Подробнее</div>
-          </a>
-          <a class="manufacture__card vuda" data-card="vuda" href="#">
-            <div class="manufacture__card-photo">
-              <img src="./img/vuda.webp" alt="pripoi_sac_307">
-            </div>
-            <div class="manufacture__card-descr">слиток, пруток, гранула</div>
-            <div class="manufacture__card-title">Сплав Вуда по ТУ 6-09-4064-87</div>
-            <div class="manufacture__card-detailed">Подробнее</div>
-          </a>
-          <a class="manufacture__card latun" data-card="latun" href="#">
-            <div class="manufacture__card-photo">
-              <img src="./img/latun.webp" alt="plumb-SSu">
-            </div>
-            <div class="manufacture__card-descr">чушка</div>
-            <div class="manufacture__card-title">Латуни литейные ЛС, ЛСД, ЛК1 и другие</div>
-            <div class="manufacture__card-detailed">Подробнее</div>
-          </a>
-          <a class="manufacture__card vuda" data-card="vuda" href="#">
-            <div class="manufacture__card-photo">
-              <img src="./img/roze.webp" alt="plumb-SSu_1292-81">
-            </div>
-            <div class="manufacture__card-descr">слиток, пруток, гранула</div>
-            <div class="manufacture__card-title">Сплав Розе по ТУ 48-0220-57-93</div>
-            <div class="manufacture__card-detailed">Подробнее</div>
-          </a>
-          <a class="manufacture__card indiy" data-card="vuda" href="#">
-            <div class="manufacture__card-photo">
-              <img src="./img/pripoy_POI.webp" alt="bronza_614-97">
-            </div>
-            <div class="manufacture__card-descr">фольга, пруток, проволока, слиток</div>
-            <div class="manufacture__card-title">Припои на основе индия ПОИн10, ПОИн52, ПОИн90 и другие
-            </div>
-            <div class="manufacture__card-detailed">Подробнее</div>
-          </a>
-        </div>
-        <div class="manufacture__navigation">
-          <a class="manufacture__navigation-btn prev" href="./manufacture.html" >
-            
-          </a>
-          <div class="manufacture__navigation-pager" >
-            <a class="manufacture__navigation-page" href="./manufacture.html" >
-            <span>1</span>
+            <a class="supply-license-img" data-fancybox="gallery_2" href="../img/license_2.jpg">
+              <img src="../img/license_2.jpg"  alt="license">
             </a>
-            <a class="manufacture__navigation-page">
-              <span>2</span>
+            <a class="supply-license-img" data-fancybox="gallery_2" href="../img/license_3.jpg">
+              <img src="../img/license_3.jpg"  alt="license">
             </a>
           </div>
-          <a class="manufacture__navigation-btn next">
-          </a>
         </div>
-      </div>
-      <div class="manufacture__txt">
-        <div class="container">
-          <div class="manufacture__txt-block">
-            <p>Производство цветных металлов выполняется в строгом соответствии с действующими государственными стандартами. Завод располагает самым современным оборудованием, вся продукция выпускается непосредственно на месте без делегирования каких-либо процессов сторонним подрядчикам. Весь производственный цикл, от выплавки до отгрузки готовой продукции заказчику, НПО «ФЕНИКС» берет на себя. Проверка качества цветных металлов и цветных сплавов выполняется в собственной аккредитованной, лицензированной лаборатории завода.
-            </p>
-            <p>
-              НПО «ФЕНИКС» имеет все необходимые сертификаты и лицензии на производство цветных сплавов и металлов. Высокий уровень ответственности перед клиентами делает завод надежным партнером. В настоящее время НПО «ФЕНИКС» является одним из лидеров в отрасли производства цветных металлов и уверенно удерживает свои позиции.
-            </p>
+        <div class="supply-contact">
+          <div class="supply-contact__item">
+            <div class="supply-contact__post">
+              <h2>Начальник отдела снабжения</h2>
+            </div>
+            <p class="supply-user">Скалкин Алексей Владимирович</p>
+            <a class="supply-phone" href="tel:+78123390344"><span>Телефон:</span> 8 812 339-03-44</a>
+            <a class="supply-mail" href="mailto:skalkin@npo-fenix.ru"> <span>Email:</span> skalkin@npo-fenix.ru</a>
           </div>
+          <div class="supply-contact__item">
+            <div class="supply-contact__post">
+              <h2>Специалист отдела снабжения</h2>
+            </div>
+            <p class="supply-user">Данилов Павел Сергеевич</p>
+            <a class="supply-phone" href="tel:+79111844930"><span>Телефон: </span>8 911 184-49-30</a>
+            <a class="supply-mail" href="mailto:danilovp@npo-fenix.ru"><span>Email: </span>danilovp@npo-fenix.ru</a>
+          </div>
+
         </div>
       </div>
-    </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__menu">
         <nav class="footer__menu-wrapper">
-          <a class="footer__menu-link" href="./manufacture.html">
+          <a class="footer__menu-link" href="../manufacture/manufacture.html">
             <p class="footer__menu-p">Производство</p>
             <p class="footer__menu-txt">продукция</p>
           </a>
-          <a class="footer__menu-link" href="#">
+          <a class="footer__menu-link" href="../snab/snab.html">
             <p class="footer__menu-p">Купим</p>              
           </a>
           <a class="footer__menu-link" href="#">
@@ -427,8 +364,8 @@
       </div>
       <div class="footer__logo">
         <div class="footer__logo-box">
-          <div class="logo" href="../index.html">
-            <a class="logo__img" href="../index.html">
+          <div class="logo" href="#">
+            <a class="logo__img" href="#">
               <img src="../img/logo.svg" alt="logo">
             </a>
             <a class="logo__title" href="#">НПО Феникс</a>
@@ -471,7 +408,8 @@
       </div>    
     </div>
   </footer> 
-    <script src="../js/jquery-3.6.1.min.js"></script>
-    <script src="../js/manufacture.js"></script>
+  <script src="../../js/jquery-3.6.1.min.js"></script>
+  <script src="../../js/jquery.fancybox.min.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>

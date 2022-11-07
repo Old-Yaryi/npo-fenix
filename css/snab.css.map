@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,IAAI;CACb;;AACD,AAAA,YAAY,CAAC;EACX,aAAa,EAAE,KAAK;CACrB;;AACD,AAAA,EAAE,CAAC;EACD,cAAc,EAAE,SAAS;CAC1B",
+    "sources": [
+        "../scss/snab.scss"
+    ],
+    "names": [],
+    "file": "snab.css"
+}

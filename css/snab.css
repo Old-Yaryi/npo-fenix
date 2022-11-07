@@ -206,4 +206,138 @@ h1 {
   left: -25px;
   top: 0;
 }
+
+.procurement {
+  background-color: #F9F9F9;
+  padding: 100px 0 100px;
+  position: relative;
+}
+
+.procurement::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  left: -50px;
+  top: 0;
+  width: 10vw;
+  background-color: #fff;
+}
+
+.procurement-title {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.procurement-title::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 80%;
+  background-color: #BF9D77;
+  top: 0;
+  left: -20px;
+}
+
+.procurement-title h2 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 150%;
+  color: #983031;
+}
+
+.procurement-title h2 span {
+  color: #BF9D77;
+}
+
+.procurement__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.procurement__inner {
+  width: 50%;
+}
+
+.procurement__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 20px;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.procurement__price-header {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.procurement__price-header::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(191, 157, 119, 0.3);
+}
+
+.procurement__price-title {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.procurement__price-subtitle {
+  font-weight: 400;
+  opacity: 0.4;
+  line-height: 1.5;
+}
+
+.procurement__price tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.procurement__price tr td {
+  margin-bottom: 20px;
+}
+
+.procurement__price-product {
+  position: relative;
+  margin-left: 30px;
+}
+
+.procurement__price-product::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: 0;
+  left: -30px;
+  border: 2px solid #983031;
+  border-radius: 50%;
+}
+
+.procurement__price-sale {
+  opacity: 0.4;
+}
 /*# sourceMappingURL=snab.css.map */

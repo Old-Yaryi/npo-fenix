@@ -165,3 +165,110 @@ h1 {
     }
   }
 }
+.procurement {
+  background-color: $bg_accent;
+  padding: 100px 0 100px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    left: -50px;
+    top: 0;
+    width: 10vw;
+    background-color: #fff;
+  }
+  &-title {
+    margin-bottom: 50px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 80%;
+      background-color: #BF9D77;
+      top: 0;
+      left: -20px;
+    }
+    & h2 {
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 150%;
+      color: #983031;
+      & span {
+        color: #BF9D77;
+      }
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+  }
+  &__inner {
+    width: 50%;
+  }
+  &__price {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    &-header {
+      margin-bottom: 40px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        height: 1px;
+        width: 100%;
+        background-color: $second_opasity;
+      }
+    }
+    &-title {
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 1.5;
+    }
+    &-subtitle {
+      font-weight: 400;
+      opacity: 0.4;
+      line-height: 1.5;
+    }
+    & tr {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 30px;
+      align-items: flex-end;
+      & td {
+        margin-bottom: 20px;
+      }
+    }
+    &-product {
+      position: relative;
+      margin-left: 30px;
+      
+      &::after {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        top: 0;
+        left: -30px;
+        border: 2px solid #983031;
+        border-radius: 50%;
+      }
+    }
+    &-sale {
+      opacity: 0.4;
+    }
+
+  }
+
+
+
+
+
+  
+}

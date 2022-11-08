@@ -11,6 +11,11 @@ main {
 h1 {
   text-transform: uppercase;
 }
+h4 {
+  line-height: 150%;
+  font-size: 24px;
+  font-weight: 900;
+}
 .breadcrumbs {
   margin-bottom: 50px;
 }
@@ -152,4 +157,196 @@ h1 {
       }
     }
   }
+  &-offer {
+    background-color: $bg_accent;
+    padding: 100px 0;
+  }
+  &-device {
+    &__header {
+      margin-bottom: 40px;
+      
+      & h1 {
+        margin-bottom: 50px;
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          width: 1px;
+          height: 80%;
+          background-color: $second-color;
+          top: 10px;
+          left: -50px;
+        }
+      }
+    }
+    &__item {
+      padding: 30px;
+      background-color: #fff;
+      &.last {
+        margin-top: -85px;
+        & .laboratory-table__inner{
+          position: relative;
+          &::before {
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            content: "";
+            background-color: $second_opasity;
+            bottom: -20px;
+          }
+        }
+      }
+    }
+    &__block {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 30px;
+      margin-bottom: 40px;
+      & .laboratory-device__item {
+        width: 50%;
+      }
+    }
+  }
+  &-table {
+    &__header {
+      position: relative;
+      margin-bottom: 40px;
+      &::before {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: $second_opasity;
+        bottom: -20px;
+      }
+      & h4 {
+        max-width: 420px;
+        & span {
+          height: 16px;
+          color: #fff;
+        }
+      } 
+    }
+    &__device {
+      margin-bottom: 10px;
+      margin-left: 30px;
+      position: relative;
+      width: 300px;
+      &::after {
+        position: absolute;
+        content: "";
+        border: 1px solid $accent-color;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        top: 5px;
+        left: -30px;
+      }
+      &_title {
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+    }
+    &__inner {
+      display: flex;
+      column-gap: 50px;
+      justify-content: space-between;
+    }
+    &__warning {
+      margin-top: 40px;
+      & p {
+        color: $accent-color;
+        margin-left: 30px;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: url(../img/warning.svg);
+          top: 2px;
+          left: -30px;
+        }
+      }
+    }
+  }
+  &-slider {
+    margin-bottom: 100px;
+    overflow: hidden;
+    padding: 50px;
+    & .slick-track {
+      display: flex;
+      column-gap: 30px;
+    }
+    &__item {
+      overflow: hidden;
+      margin-bottom: 50px;
+    }
+    &__nav {
+      position: relative;
+      & .slick-arrow {
+        position: relative;
+        font-size: 0;
+        border: none;
+        background-color: $second-color;
+        height: 40px;
+        width: 40px;
+        &:hover {
+          background-color: rgba(43, 50, 60, 0.2);
+        }
+      }
+      & .slick-prev {
+        position: absolute;
+        top: -16px;
+        left: 30px;
+        cursor: pointer;
+        &::after {
+          content: url(../manufacture/product/img/arrow-left_white.svg);
+          position: absolute;
+          top: 12px;
+          left: 12px;
+        }
+        &:hover::after {
+          content: url(../manufacture/product/img/arrow-left_black.svg);
+        }
+      }
+      & .slick-next {
+        position: absolute;
+        top: -16px;
+        right: 30px;
+        cursor: pointer;
+        &::after {
+          content: url(../manufacture/product/img/arrow-right_white.svg);
+          position: absolute;
+          top: 12px;
+          right: 12px;
+        }
+        &:hover::after {
+          content: url(../manufacture/product/img/arrow-rifht_black.svg);
+        }
+      }
+    }
+  }
+}
+.progress {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 3px;
+  border-radius: 10px;
+  overflow: hidden;
+  
+  background-color: rgba(43, 50, 60, 0.2);
+  background-image: linear-gradient(to right, $second-color, $second-color);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  
+  transition: background-size .4s ease-in-out;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
 }

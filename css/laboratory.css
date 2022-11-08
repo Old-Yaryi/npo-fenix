@@ -6,6 +6,12 @@ h1 {
   text-transform: uppercase;
 }
 
+h4 {
+  line-height: 150%;
+  font-size: 24px;
+  font-weight: 900;
+}
+
 .breadcrumbs {
   margin-bottom: 50px;
 }
@@ -184,5 +190,240 @@ h1 {
 
 .laboratory-contact__mail span {
   font-weight: 700;
+}
+
+.laboratory-offer {
+  background-color: #F9F9F9;
+  padding: 100px 0;
+}
+
+.laboratory-device__header {
+  margin-bottom: 40px;
+}
+
+.laboratory-device__header h1 {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.laboratory-device__header h1::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 80%;
+  background-color: #BF9D77;
+  top: 10px;
+  left: -50px;
+}
+
+.laboratory-device__item {
+  padding: 30px;
+  background-color: #fff;
+}
+
+.laboratory-device__item.last {
+  margin-top: -85px;
+}
+
+.laboratory-device__item.last .laboratory-table__inner {
+  position: relative;
+}
+
+.laboratory-device__item.last .laboratory-table__inner::before {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background-color: rgba(191, 157, 119, 0.3);
+  bottom: -20px;
+}
+
+.laboratory-device__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  margin-bottom: 40px;
+}
+
+.laboratory-device__block .laboratory-device__item {
+  width: 50%;
+}
+
+.laboratory-table__header {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.laboratory-table__header::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: rgba(191, 157, 119, 0.3);
+  bottom: -20px;
+}
+
+.laboratory-table__header h4 {
+  max-width: 420px;
+}
+
+.laboratory-table__header h4 span {
+  height: 16px;
+  color: #fff;
+}
+
+.laboratory-table__device {
+  margin-bottom: 10px;
+  margin-left: 30px;
+  position: relative;
+  width: 300px;
+}
+
+.laboratory-table__device::after {
+  position: absolute;
+  content: "";
+  border: 1px solid #983031;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  top: 5px;
+  left: -30px;
+}
+
+.laboratory-table__device_title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.laboratory-table__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.laboratory-table__warning {
+  margin-top: 40px;
+}
+
+.laboratory-table__warning p {
+  color: #983031;
+  margin-left: 30px;
+  position: relative;
+}
+
+.laboratory-table__warning p::before {
+  position: absolute;
+  content: url(../img/warning.svg);
+  top: 2px;
+  left: -30px;
+}
+
+.laboratory-slider {
+  margin-bottom: 100px;
+  overflow: hidden;
+  padding: 50px;
+}
+
+.laboratory-slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.laboratory-slider__item {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.laboratory-slider__nav {
+  position: relative;
+}
+
+.laboratory-slider__nav .slick-arrow {
+  position: relative;
+  font-size: 0;
+  border: none;
+  background-color: #BF9D77;
+  height: 40px;
+  width: 40px;
+}
+
+.laboratory-slider__nav .slick-arrow:hover {
+  background-color: rgba(43, 50, 60, 0.2);
+}
+
+.laboratory-slider__nav .slick-prev {
+  position: absolute;
+  top: -16px;
+  left: 30px;
+  cursor: pointer;
+}
+
+.laboratory-slider__nav .slick-prev::after {
+  content: url(../manufacture/product/img/arrow-left_white.svg);
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.laboratory-slider__nav .slick-prev:hover::after {
+  content: url(../manufacture/product/img/arrow-left_black.svg);
+}
+
+.laboratory-slider__nav .slick-next {
+  position: absolute;
+  top: -16px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.laboratory-slider__nav .slick-next::after {
+  content: url(../manufacture/product/img/arrow-right_white.svg);
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.laboratory-slider__nav .slick-next:hover::after {
+  content: url(../manufacture/product/img/arrow-rifht_black.svg);
+}
+
+.progress {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 3px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgba(43, 50, 60, 0.2);
+  background-image: -webkit-gradient(linear, left top, right top, from(#BF9D77), to(#BF9D77));
+  background-image: linear-gradient(to right, #BF9D77, #BF9D77);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size .4s ease-in-out;
+  transition: background-size .4s ease-in-out;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 /*# sourceMappingURL=laboratory.css.map */

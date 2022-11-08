@@ -1,0 +1,188 @@
+main {
+  height: 100%;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.breadcrumbs {
+  margin-bottom: 50px;
+}
+
+.laboratory {
+  margin-bottom: 100px;
+}
+
+.laboratory-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  margin-bottom: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.laboratory-about {
+  width: 56%;
+}
+
+.laboratory-about__title {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.laboratory-about__title::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 80%;
+  background-color: #BF9D77;
+  top: 0;
+  left: -50px;
+}
+
+.laboratory-about__description {
+  max-width: 550px;
+}
+
+.laboratory-services {
+  padding: 50px 40px;
+  border: 3px solid #BF9D77;
+  position: relative;
+  width: 30%;
+}
+
+.laboratory-services::after {
+  position: absolute;
+  content: url(../img/arrow-strong.svg);
+  top: 50%;
+  left: -3px;
+}
+
+.laboratory-services__head {
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(191, 157, 119, 0.3);
+  padding-bottom: 10px;
+}
+
+.laboratory-services__title {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.laboratory-services__link-lab {
+  color: #983031;
+  margin-bottom: 10px;
+}
+
+.laboratory-services__link-lab:hover {
+  color: #BF9D77;
+}
+
+.laboratory-services__link-delivery {
+  color: #BF9D77;
+}
+
+.laboratory-services__link-delivery:hover {
+  color: #983031;
+}
+
+.laboratory-contact {
+  padding: 30px;
+  border: 4px solid rgba(191, 157, 119, 0.3);
+}
+
+.laboratory-contact__post {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.laboratory-contact__post::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: rgba(191, 157, 119, 0.3);
+  bottom: -20px;
+  left: 0;
+}
+
+.laboratory-contact__post p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.laboratory-contact__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 100px;
+          column-gap: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.laboratory-contact__user {
+  position: relative;
+  margin-left: 30px;
+  line-height: 150%;
+}
+
+.laboratory-contact__user::after {
+  position: absolute;
+  content: url(../img/user-icon.svg);
+  top: 2px;
+  left: -30px;
+}
+
+.laboratory-contact__phone {
+  position: relative;
+  margin-left: 30px;
+  color: #2B323C;
+}
+
+.laboratory-contact__phone::after {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 18px;
+  background-image: url(../img/phone.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  left: -30px;
+  top: -2px;
+}
+
+.laboratory-contact__phone span {
+  font-weight: 700;
+}
+
+.laboratory-contact__mail {
+  position: relative;
+  margin-left: 30px;
+  color: #2B323C;
+}
+
+.laboratory-contact__mail::after {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 18px;
+  background-image: url(../img/mail.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  left: -30px;
+  top: -2px;
+}
+
+.laboratory-contact__mail span {
+  font-weight: 700;
+}
+/*# sourceMappingURL=laboratory.css.map */

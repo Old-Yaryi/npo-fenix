@@ -340,4 +340,143 @@ h1 {
 .procurement__price-sale {
   opacity: 0.4;
 }
+
+@media (max-width: 1500px) {
+  .procurement::after {
+    left: -90px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .procurement::after {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .supply__title {
+    margin-bottom: 20px;
+  }
+  .supply-descripton {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .supply-descripton__inner {
+    padding-right: 50px;
+  }
+  .supply-license {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .supply-license-img img {
+    width: 27vw;
+  }
+  .supply-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+  }
+  .supply-contact__item {
+    width: 90%;
+  }
+  .procurement-title h2 {
+    font-size: 16px;
+  }
+  .procurement__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .procurement__inner {
+    width: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  .supply-contact__item {
+    width: 88%;
+  }
+  .supply-license {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .supply-descripton__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-right: 0;
+  }
+  .procurement__price {
+    padding: 20px 20px;
+  }
+  .procurement__price-title {
+    font-size: 16px;
+  }
+  .procurement__price-title::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url(../img/arrow-down.svg) center no-repeat;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    cursor: pointer;
+  }
+  .procurement__price-header.active .procurement__price-title::after {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .procurement__price-subtitle {
+    display: none;
+  }
+  .procurement__price-sale {
+    margin-left: 30px;
+    font-size: 12px;
+  }
+  .procurement__price tbody {
+    display: none;
+  }
+  .procurement__price tbody tr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 12px;
+  }
+  .procurement__price tr td {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    text-transform: none;
+    font-size: 24px;
+  }
+  li {
+    font-size: 14px;
+  }
+  .breadcrumbs {
+    margin-bottom: 30px;
+  }
+}
 /*# sourceMappingURL=snab.css.map */

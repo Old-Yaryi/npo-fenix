@@ -272,3 +272,132 @@ h1 {
 
   
 }
+@media (max-width: 1500px) {
+  .procurement::after {
+    left: -90px;
+  }
+}
+@media (max-width: 1500px) {
+  .procurement::after {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .supply { 
+    &__title {
+      margin-bottom: 20px;
+    }
+    &-descripton {
+      flex-direction: column;
+      &__inner {
+        padding-right: 50px;
+      }
+    }
+    &-license {
+      justify-content: space-around;
+      &-img img {
+        width: 27vw;
+      }
+    }
+    &-contact {
+      flex-direction: column;
+      row-gap: 30px;
+      &__item {
+        width: 90%;
+      }
+    }
+  }
+  .procurement {
+    &-title {
+      & h2 {
+        font-size: 16px;
+      }
+    }
+    &__item {
+      flex-direction: column;
+    }
+    &__inner {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 680px) {
+  .supply-contact__item {
+    width: 88%;
+  }
+  .supply-license {
+    justify-content: space-between;
+  }
+  .supply-descripton__inner {
+    flex-wrap: wrap;
+    padding-right: 0;
+  }
+  .procurement {
+    &__price {
+      padding: 20px 20px;
+      &-title {
+        font-size: 16px;
+        &::after {
+          content: "";
+          width: 16px;
+          height: 16px;
+          background: url(../img/arrow-down.svg) center no-repeat;
+          position: absolute;
+          top: 20px;
+          right: 0;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          z-index: 1;
+          -webkit-transition: all .3s linear;
+          -o-transition: all .3s linear;
+          transition: all .3s linear;
+          cursor: pointer;
+        } 
+      }
+      &-header.active {
+        & .procurement__price-title::after {
+          transform: rotate(180deg);
+        }
+      }
+      &-subtitle {
+        display: none;
+      }
+      &-sale {
+        margin-left: 30px;
+        font-size: 12px;
+      }
+      & tbody {
+        display: none;
+        & tr {
+          flex-direction: column;
+          align-items: flex-start;
+          margin-bottom: 12px;
+        }
+      }
+      & tr td {
+        margin-bottom: 12px;
+      }
+      
+    }
+  }
+  
+}
+@media (max-width: 480px) {
+  h1 {
+    text-transform: none;
+    font-size: 24px;
+  }
+  li {
+    font-size: 14px;
+  }
+  .breadcrumbs {
+    margin-bottom: 30px;
+  }
+}

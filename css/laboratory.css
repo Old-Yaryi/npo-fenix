@@ -682,6 +682,9 @@ h4 {
   .laboratory-services__link-lab, .laboratory-services__link-delivery {
     line-height: 150%;
   }
+  .laboratory-services::after {
+    top: 40%;
+  }
   .laboratory-contact__phone, .laboratory-contact__mail {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -709,6 +712,9 @@ h4 {
   }
   .laboratory-device__item.last {
     margin-top: -100px;
+  }
+  .laboratory-services.delivery::after {
+    top: 70%;
   }
   .laboratory-table__header h4 span {
     font-size: 4px;

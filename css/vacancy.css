@@ -1,0 +1,77 @@
+main {
+  height: 100%;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.vacancy-header {
+  padding: 50px 0;
+}
+
+.vacancy-header h1 {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.vacancy-header h1::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: -50px;
+  height: 80%;
+  width: 1px;
+  background-color: #BF9D77;
+}
+
+.vacancy-title {
+  position: relative;
+  font-size: 20px;
+  line-height: 150%;
+  color: #2B323C;
+  margin-left: 50px;
+}
+
+.vacancy-title:hover {
+  color: #BF9D77;
+}
+
+.vacancy-title.active {
+  color: #983031;
+}
+
+.vacancy-title::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/case-hover.svg);
+  height: 25px;
+  width: 25px;
+  left: -50px;
+  top: 0;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.vacancy-title svg {
+  height: 12px;
+  width: 12px;
+}
+
+.vacancy-block {
+  cursor: pointer;
+  padding: 30px 0;
+  border-top: 1px solid rgba(191, 157, 119, 0.3);
+  border-bottom: 1px solid rgba(191, 157, 119, 0.3);
+}
+
+.vacancy-block__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=vacancy.css.map */

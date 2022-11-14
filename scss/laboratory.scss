@@ -387,6 +387,9 @@ h4 {
       font-size: 16px;
       line-height: 150%;
       color: $second-color;
+      &:hover {
+        color: $accent-color;
+      }
     }
   }
 }
@@ -530,6 +533,7 @@ h4 {
     }
     &-slider {
       margin-bottom: 50px;
+      padding: 50px 0;
       &__nav {
         & .slick-prev {
           left: 0;
@@ -539,6 +543,92 @@ h4 {
         }
       }
     }  
+    &-sertificat {
+      padding: 50px 0;
+    }
   }
   
+}
+@media (max-width: 480px) {
+  h4 {
+    font-size: 16px;
+  }
+  .laboratory {
+    &-services {
+      &__title {
+        font-size: 20px;
+      }
+    }
+    &-sertificat {
+      &__block {
+        flex-direction: column;
+        padding: 30px 0 20px;
+      }
+      &__inner {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    text-transform: none;
+  }
+  .breadcrumbs {
+    margin-bottom: 30px;
+  }
+  .laboratory {
+    &-services {
+      padding: 30px;
+      &__link-lab, &__link-delivery {
+        line-height: 150%;
+      }
+    }
+    &-contact__phone, &-contact__mail {
+      display: flex;
+      flex-direction: column;
+    }
+    &-device__header {
+      margin-bottom: 30px;
+      & h1 {
+        margin-bottom: 20px;
+      }
+    }
+    &-table__device {
+      width: 85%;
+      
+    } 
+    &-device {
+      &__block {
+        row-gap: 12px;
+        margin-bottom: 12px;
+      }
+      &__item {
+        margin-bottom: 12px;
+        &.last {
+        margin-top: -100px;
+        }
+      }
+    }
+  }
+  .laboratory-table__header h4 span {
+    font-size: 4px;
+  } 
+  .laboratory-slider__nav {
+    & .slick-prev::after {
+      top: 8px;
+      left: 8px;
+    }
+    & .slick-next::after {
+      top: 8px;
+      left: 8px
+    }
+    & .slick-arrow {
+      height: 30px;
+      width: 30px;
+    }
+  }
+  .progress {
+    width: 60%;
+  }
 }

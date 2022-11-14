@@ -486,6 +486,10 @@ h4 {
   color: #BF9D77;
 }
 
+.laboratory-sertificat__link:hover {
+  color: #983031;
+}
+
 .progress {
   display: block;
   margin: 0 auto;
@@ -633,12 +637,96 @@ h4 {
   }
   .laboratory-slider {
     margin-bottom: 50px;
+    padding: 50px 0;
   }
   .laboratory-slider__nav .slick-prev {
     left: 0;
   }
   .laboratory-slider__nav .slick-next {
     right: 0;
+  }
+  .laboratory-sertificat {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h4 {
+    font-size: 16px;
+  }
+  .laboratory-services__title {
+    font-size: 20px;
+  }
+  .laboratory-sertificat__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px 0 20px;
+  }
+  .laboratory-sertificat__inner {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    text-transform: none;
+  }
+  .breadcrumbs {
+    margin-bottom: 30px;
+  }
+  .laboratory-services {
+    padding: 30px;
+  }
+  .laboratory-services__link-lab, .laboratory-services__link-delivery {
+    line-height: 150%;
+  }
+  .laboratory-contact__phone, .laboratory-contact__mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .laboratory-device__header {
+    margin-bottom: 30px;
+  }
+  .laboratory-device__header h1 {
+    margin-bottom: 20px;
+  }
+  .laboratory-table__device {
+    width: 85%;
+  }
+  .laboratory-device__block {
+    row-gap: 12px;
+    margin-bottom: 12px;
+  }
+  .laboratory-device__item {
+    margin-bottom: 12px;
+  }
+  .laboratory-device__item.last {
+    margin-top: -100px;
+  }
+  .laboratory-table__header h4 span {
+    font-size: 4px;
+  }
+  .laboratory-slider__nav .slick-prev::after {
+    top: 8px;
+    left: 8px;
+  }
+  .laboratory-slider__nav .slick-next::after {
+    top: 8px;
+    left: 8px;
+  }
+  .laboratory-slider__nav .slick-arrow {
+    height: 30px;
+    width: 30px;
+  }
+  .progress {
+    width: 60%;
   }
 }
 /*# sourceMappingURL=laboratory.css.map */

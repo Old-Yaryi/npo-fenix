@@ -1,0 +1,86 @@
+main {
+  height: 100%;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.breadcrumbs {
+  margin-bottom: 50px;
+}
+
+.about-head__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.about-head__inner {
+  width: 50%;
+}
+
+.about-head__title {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.about-head__title::after {
+  position: absolute;
+  content: "";
+  height: 80%;
+  width: 1px;
+  background-color: #BF9D77;
+  left: -50px;
+  top: 0;
+}
+
+.about-head__descpiption p {
+  margin-bottom: 30px;
+}
+
+.about-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.about-slider__item .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-slider__item .slick-dots {
+  position: absolute;
+  left: 30px;
+  bottom: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.about-slider__item .slick-dots button {
+  border: none;
+  font-size: 0;
+  width: 30px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.about-slider__item .slick-dots .slick-active button {
+  background-color: #BF9D77;
+}
+
+.about-slider__nav {
+  position: absolute;
+  bottom: 100px;
+  right: 30px;
+}
+/*# sourceMappingURL=about.css.map */

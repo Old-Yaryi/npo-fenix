@@ -1,0 +1,75 @@
+$primary-color: #2B323C;
+$second-color: #BF9D77;
+$accent_bg: linear-gradient(360deg, rgba(152, 48, 49, 0.9) 29.13%, rgba(152, 48, 49, 0.9) 98.03%);
+$accent-color: #983031;
+$bg_accent: #F9F9F9;
+$second_opasity:rgba(191, 157, 119, 0.3);
+main {
+  height: 100%;
+}
+h1 {
+  text-transform: uppercase;
+}
+.breadcrumbs {
+  margin-bottom: 50px;
+}
+.about {
+  &-head {
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 50px;
+    }
+    &__inner {
+      width: 50%;
+    }
+    &__title {
+      margin-bottom: 40px;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        height: 80%;
+        width: 1px;
+        background-color: $second-color;
+        left: -50px;
+        top: 0;
+      }
+    }
+    &__descpiption p {
+      margin-bottom: 30px;
+    }
+  }
+  &-slider {
+    overflow: hidden;
+    position: relative;
+    &__item {
+      & .slick-track {
+        display: flex;
+      }
+      & .slick-dots {
+       position: absolute;
+       left: 30px;
+       bottom: 110px;
+       display: flex;
+       column-gap: 10px;
+       & button {
+         border: none;
+         font-size: 0;
+         width: 30px;
+         height: 1px;
+         background-color: #fff;
+       }
+       & .slick-active button {
+         background-color: $second-color;
+       }
+      }
+    }
+    &__nav {
+      position: absolute;
+      bottom: 100px;
+      right: 30px;
+    }
+    
+  }
+}

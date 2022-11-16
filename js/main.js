@@ -30,7 +30,6 @@ $('.header-slider').slick({
 });
 // *******Slider-product****
 const swiper = new Swiper('.swiper', {
-
   slidesPerView: 5,
   centeredSlides: true,
   loop: true,

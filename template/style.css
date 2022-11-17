@@ -748,7 +748,7 @@ main {
   width: 100%;
   padding-left: 10px;
   z-index: 3;
-  padding-top: 20px;
+  
 }
 
 .footer__menu::after {
@@ -778,6 +778,7 @@ main {
   padding: 14px 27px;
   background-color: #BF9D77;
   margin-right: -2px;
+  padding-top: 20px;
 }
 
 .footer__menu-up:hover {
@@ -786,6 +787,7 @@ main {
 
 .footer__menu-link {
   position: relative;
+  padding-top: 20px;
 }
 
 .footer__menu-link::before {
@@ -795,7 +797,7 @@ main {
   width: 0;
   left: 50%;
   background-color: #983031;
-  bottom: 0;
+  bottom: -5px;
   -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }

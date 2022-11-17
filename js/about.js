@@ -41,25 +41,25 @@ $('.about-sertificate__slider').slick({
     }
   ]
 });
-// const swiper = new Swiper('.swiper', {
-//   slidesPerView: 5,
-//   // centeredSlides: true,
-//   loop: true,
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-//   breakpoints: {
-//     // when window width is >= 320px
-//     320: {
-//       slidesPerView: 3,
 
-//     },
-//     415: {
-//       slidesPerView: 3,
-//     },
-//     480: {
-//       slidesPerView: 5,
-//     },
-//   }
-// });
+$('.about-reviews__slider').slick({
+  dots: false,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  appendArrows:'.about-reviews__nav',
+  speed: 400,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
+});

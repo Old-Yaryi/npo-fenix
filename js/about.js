@@ -6,10 +6,10 @@ $('.about-slider__item').slick({
   speed: 400,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 769,
       settings: {
 
-        slidesToShow: 2
+        slidesToShow: 1
       }
     },
     {
@@ -28,9 +28,15 @@ $('.about-sertificate__slider').slick({
   speed: 400,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1000,
       settings: {
-        slidesToShow: 2
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 3
       }
     },
     {
@@ -50,9 +56,15 @@ $('.about-reviews__slider').slick({
   speed: 400,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1000,
       settings: {
-        slidesToShow: 2
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 3
       }
     },
     {
@@ -62,4 +74,9 @@ $('.about-reviews__slider').slick({
       }
     }
   ]
+});
+
+$(".about-link_more").on("click", function(event) {
+  event.preventDefault();
+$(this).parent().find(".more").slideToggle();
 });

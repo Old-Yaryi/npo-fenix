@@ -78,5 +78,6 @@ $('.about-reviews__slider').slick({
 
 $(".about-link_more").on("click", function(event) {
   event.preventDefault();
+  $(this).toggleClass('active')
 $(this).parent().find(".more").slideToggle();
 });

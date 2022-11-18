@@ -232,6 +232,15 @@ h1, h2 {
     &:hover {
       color: #983031;
     }
+    &::before {
+      position: absolute;
+      content: url(../img/arrow-down.svg);
+      width: 12px;
+      height: 12px;
+      top: -3px;
+      right: -16px;
+      transition: transform 0.4s ease 0s ;
+    }
   }
   &-sertificate {
     position: relative;
@@ -669,6 +678,14 @@ h1, h2 {
     &-link_more {
       display: inline-block;
       cursor: pointer;
+      max-width: 95px;
+      &.active {
+        &::before{
+          transform: rotate(-180deg);
+          top: 15px;
+        }
+        
+      }
     }
     &-product {
       margin-bottom: 30px;
@@ -705,11 +722,14 @@ h1, h2 {
   }
 }
 @media (max-width: 768px) {
-  h1 {
+  h1, h2 {
     font-size: 28px;
   }
   h3 {
     font-size: 16px;
+  }
+  .about-testimony__photo-block img {
+    width: 195px;
   }
 }
 

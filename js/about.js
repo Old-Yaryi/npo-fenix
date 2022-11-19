@@ -40,9 +40,15 @@ $('.about-sertificate__slider').slick({
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 681,
       settings: {
-        slidesToShow: 1
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 481,
+      settings: {
+        slidesToShow: 2
       }
     }
   ]
@@ -64,13 +70,14 @@ $('.about-reviews__slider').slick({
     {
       breakpoint: 900,
       settings: {
+        // centerMode: true,
         slidesToShow: 3
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 481,
       settings: {
-        slidesToShow: 1
+        slidesToShow: 2
       }
     }
   ]

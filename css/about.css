@@ -1015,5 +1015,44 @@ h1, h2 {
   .about-sertificate__nav .slick-next:hover::before {
     left: 50%;
   }
+  .about-reviews {
+    position: relative;
+    padding-bottom: 40px;
+  }
+  .about-reviews__nav {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+  }
+  .about-reviews__nav .slick-arrow {
+    height: 40px;
+    width: 40px;
+  }
+  .about-reviews__nav .slick-prev::before {
+    top: 30%;
+    left: 30%;
+  }
+  .about-reviews__nav .slick-prev:hover::before {
+    left: 20%;
+  }
+  .about-reviews__nav .slick-next::before {
+    top: 30%;
+    left: 30%;
+  }
+  .about-reviews__nav .slick-next:hover::before {
+    left: 40%;
+  }
+  .about-reviews__slider-item img {
+    width: 36vw;
+  }
+  .about-reviews__slider-item p {
+    max-width: 38vw;
+  }
+  .about-testimony__header-title h2 {
+    margin-left: -1px;
+  }
+  .about-testimony__photo-block img {
+    width: 40vw;
+  }
 }
 /*# sourceMappingURL=about.css.map */

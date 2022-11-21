@@ -912,5 +912,48 @@ h1, h2 {
       }
     }
   }
+  .about-reviews {
+    position: relative;
+    padding-bottom: 40px;
+    &__nav {
+      position: absolute;
+      bottom: 0;
+      right: 20px;
+      & .slick-arrow {
+        height: 40px;
+        width: 40px;
+      }
+      & .slick-prev::before {
+        top: 30%;
+        left: 30%;
+      }
+      & .slick-prev:hover::before {
+        left: 20%;
+      }
+      & .slick-next::before {
+        top: 30%;
+        left: 30%;
+      }
+      & .slick-next:hover::before {
+        left: 40%;
+      }
+    }
+    &__slider-item{
+      & img {
+        width: 36vw;
+      }
+      & p {
+        max-width: 38vw;
+      }
+    } 
+  }
+  .about-testimony__header-title {
+    & h2  {
+      margin-left: -1px;
+    }
+  }
+  .about-testimony__photo-block img {
+    width: 40vw;
+  }
 }
 

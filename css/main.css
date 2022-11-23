@@ -319,10 +319,6 @@ main {
   transition: background-color 0.3s ease 0s;
 }
 
-.header__menu-link_language:hover {
-  background-color: rgba(191, 157, 119, 0.2);
-}
-
 .header__menu-link_language::before {
   position: absolute;
   content: url("../img/language-icon.svg");
@@ -689,7 +685,7 @@ main {
   opacity: 0.2;
   border-radius: 50%;
   top: 11px;
-  right: -5vw;
+  right: -8vw;
 }
 
 .menu__txt {
@@ -927,7 +923,7 @@ main {
   width: 0;
   left: 50%;
   background-color: #983031;
-  bottom: 0;
+  bottom: -10px;
   -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }

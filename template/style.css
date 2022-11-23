@@ -303,9 +303,7 @@ main {
   transition: background-color 0.3s ease 0s;
 }
 
-.header__menu-link_language:hover {
-  background-color: rgba(191, 157, 119, 0.2);
-}
+
 
 .header__menu-link_language::before {
   position: absolute;
@@ -322,10 +320,6 @@ main {
   color: #fff;
   font-size: 12px;
   position: relative;
-}
-
-.header__menu-link_language a:hover {
-  background-color: rgba(191, 157, 119, 0.2);
 }
 
 .header__menu-link_language-var {
@@ -530,7 +524,7 @@ main {
   opacity: 0.2;
   border-radius: 50%;
   top: 30px;
-  right: -5vw;
+  right: -8vw;
 }
 .menu__link:last-child::after {
   display: none;

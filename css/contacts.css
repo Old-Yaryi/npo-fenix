@@ -102,6 +102,10 @@ h1 {
   width: 20px;
 }
 
+.contacts__block-phone:hover {
+  color: #BF9D77;
+}
+
 .contacts__block-mail {
   color: #2B323C;
   position: relative;
@@ -117,6 +121,10 @@ h1 {
   height: 18px;
   top: 4px;
   left: -30px;
+}
+
+.contacts__block-mail:hover {
+  color: #BF9D77;
 }
 
 .map {
@@ -161,16 +169,112 @@ h1 {
 
 .map__contact-link {
   padding: 30px 0;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .map__contact-link_text {
   background-color: #7294C7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.map__contact-link_text a {
   color: #fff;
-  padding: 15px;
 }
 
 .map__contact-link_img {
   background-color: #809ECC;
-  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  width: 40px;
+}
+
+@media (max-width: 900px) {
+  .map__contact {
+    top: -30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .map__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .map__item iframe {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .map__contact {
+    position: relative;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  h1 {
+    font-size: 28px;
+  }
+  .contacts__header {
+    margin-bottom: 30px;
+  }
+  .contacts__header::after {
+    left: -10px;
+  }
+  .contacts__block {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 415px) {
+  h1 {
+    text-transform: none;
+  }
+  .contacts__block {
+    padding: 20px;
+  }
+  .contacts__block-departament {
+    padding: 20px 20px;
+  }
+  .contacts__block-unit {
+    margin-bottom: 10px;
+  }
+  .map__contact-link_text {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 /*# sourceMappingURL=contacts.css.map */

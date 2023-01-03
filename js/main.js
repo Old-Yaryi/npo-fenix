@@ -38,10 +38,8 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 3,
-
     },
     415: {
       slidesPerView: 3,
@@ -49,7 +47,6 @@ const swiper = new Swiper('.swiper', {
     480: {
       slidesPerView: 5,
     },
-    
   }
 });
 // ********laboratory-slyder*******
@@ -73,12 +70,7 @@ $('.partners__slider').slick({
       settings: {
         slidesToShow: 1,
         slidesPerRow: 1
-        // speed: 3000
-        // initialSlide: 6,
-        // infinite: false
-      }
-         
+      }    
     }
   ]
-
 });

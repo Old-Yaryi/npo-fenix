@@ -75,7 +75,6 @@ $(document).ready(function() {
     $progressBar
       .css('background-size', calc + '% 100%')
       .attr('aria-valuenow', calc );
-    
     $progressBarLabel.text( calc + '% completed' );
   });
   $slider.slick({
@@ -107,7 +106,6 @@ $(document).ready(function() {
         }
       }
     ]
-
   });  
 });
 

@@ -4,11 +4,9 @@ $(document).ready(function() {
   let $progressBarLabel = $( '.slider__label' );
   $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
     let calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
-    
     $progressBar
       .css('background-size', calc + '% 100%')
       .attr('aria-valuenow', calc );
-    
     $progressBarLabel.text( calc + '% completed' );
   });
   $slider.slick({
@@ -20,7 +18,6 @@ $(document).ready(function() {
       {
         breakpoint: 768,
         settings: {
-
           slidesToShow: 2
         }
       },

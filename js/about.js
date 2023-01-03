@@ -53,7 +53,6 @@ $('.about-sertificate__slider').slick({
     }
   ]
 });
-
 $('.about-reviews__slider').slick({
   dots: false,
   slidesToShow: 5,
@@ -70,7 +69,6 @@ $('.about-reviews__slider').slick({
     {
       breakpoint: 900,
       settings: {
-        // centerMode: true,
         slidesToShow: 3
       }
     },
@@ -82,7 +80,6 @@ $('.about-reviews__slider').slick({
     }
   ]
 });
-
 $(".about-link_more").on("click", function(event) {
   event.preventDefault();
   $(this).toggleClass('active')
